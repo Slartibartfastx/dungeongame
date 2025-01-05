@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEditor;
 using System;
 using static NodeTypeScriptableObject;
+using System.Linq;
 public class NodeScriptableObject : ScriptableObject
 {
     [HideInInspector] public string id;
@@ -59,8 +60,30 @@ public void Draw(GUIStyle nodeStyle)
         // Display the popup with the visible room types only
         int selection = EditorGUILayout.Popup("", selected, GetRoomNodeTypesToDisplay(visibleRoomTypes));
 
-        // Only update roomNodeType if the user selects a new type, keep current value if no selection is made
-        if (selection != selected && selection >= 0 && selection < visibleRoomTypes.Count)
+
+            // If a room node type has been changed and it already has children, delete the parent-child links since we need to revalidate any
+            if (childRoomNodeIDList.Count > 0)
+            {
+                foreach (string childRoomNodeID in childRoomNodeIDList.ToList()) // Use ToList() to safely iterate over the original list
+                {
+                    // Get child room node
+                    NodeScriptableObject childRoomNode = roomNodeGraph.GetRoomNode(childRoomNodeID);
+
+                    // If the child room node is not null
+                    if (childRoomNode != null)
+                    {
+                        // Remove childID from parent room node
+                        RemoveChildRoomNodeIDFromRoomNode(childRoomNode.id);
+
+                        // Remove parentID from child room node
+                        childRoomNode.RemoveParentRoomNodeIDFromRoomNode(id);
+                    }
+                }
+            }
+
+
+            // Only update roomNodeType if the user selects a new type, keep current value if no selection is made
+            if (selection != selected && selection >= 0 && selection < visibleRoomTypes.Count)
         {
             roomNodeType = visibleRoomTypes[selection];
         }
@@ -198,8 +221,70 @@ public string[] GetRoomNodeTypesToDisplay(List<NodeTypeScriptableObject> visible
     /// </summary>
     public bool AddChildRoomNodeIDToRoomNode(string childID)
     {
+        // Check child node can be added validly to parent
+        if (IsChildRoomValid(childID))
+        {
             childRoomNodeIDList.Add(childID);
             return true;
+        }
+
+        return false;
+    }
+
+
+    /// <summary>
+    /// Determines whether a child node can validly be added to the parent node.
+    /// Returns true if valid, otherwise returns false.
+    /// </summary>
+    public bool IsChildRoomValid(string childID)
+    {
+        // Check if there is already a connected BossRoom in the node graph using LINQ
+        bool isConnectedBossNodeAlready = roomNodeGraph.nodeList
+            .Any(node => node.roomNodeType.roomType == NodeTypeScriptableObject.RoomType.BossRoom
+                         && node.parentRoomNodeIDList.Count > 0);
+
+        NodeScriptableObject childNode = roomNodeGraph.GetRoomNode(childID);
+        NodeTypeScriptableObject.RoomType childRoomType = childNode.roomNodeType.roomType;
+
+        // Use a set of conditional checks with early exits
+        if (childRoomType == NodeTypeScriptableObject.RoomType.BossRoom && isConnectedBossNodeAlready)
+            return false;
+
+        if (childRoomType == NodeTypeScriptableObject.RoomType.None)
+            return false;
+
+        if (childRoomNodeIDList.Contains(childID))
+            return false;
+
+        if (id == childID)
+            return false;
+
+        if (parentRoomNodeIDList.Contains(childID))
+            return false;
+
+        if (childNode.parentRoomNodeIDList.Count > 0)
+            return false;
+
+        if (childRoomType == NodeTypeScriptableObject.RoomType.Corridor
+            && roomNodeType.roomType == NodeTypeScriptableObject.RoomType.Corridor)
+            return false;
+
+        if (childRoomType != NodeTypeScriptableObject.RoomType.Corridor
+            && roomNodeType.roomType != NodeTypeScriptableObject.RoomType.Corridor)
+            return false;
+
+        if (childRoomType == NodeTypeScriptableObject.RoomType.Corridor
+            && childRoomNodeIDList.Count >= Settings.maxChildCorridors)
+            return false;
+
+        if (childRoomType == NodeTypeScriptableObject.RoomType.Entrance)
+            return false;
+
+        if (childRoomType != NodeTypeScriptableObject.RoomType.Corridor
+            && childRoomNodeIDList.Count > 0)
+            return false;
+
+        return true;
     }
 
     /// <summary>
@@ -210,6 +295,23 @@ public string[] GetRoomNodeTypesToDisplay(List<NodeTypeScriptableObject> visible
         parentRoomNodeIDList.Add(parentID);
         return true;
     }
+
+    /// <summary>
+    /// Attempts to remove a child ID from the node. Returns true if removed, false otherwise.
+    /// </summary>
+    public bool RemoveChildRoomNodeIDFromRoomNode(string childID)
+    {
+        return childRoomNodeIDList.Remove(childID);
+    }
+
+    /// <summary>
+    /// Attempts to remove a parent ID from the node. Returns true if removed, false otherwise.
+    /// </summary>
+    public bool RemoveParentRoomNodeIDFromRoomNode(string parentID)
+    {
+        return parentRoomNodeIDList.Remove(parentID);
+    }
+
 
 #endif
 

@@ -24,6 +24,17 @@ public class NodeGraphObject : ScriptableObject
     }
 
 
+
+public NodeScriptableObject GetRoomNode(string roomNodeID)
+{
+    if (roomNodeDictionary.TryGetValue(roomNodeID, out NodeScriptableObject roomNode))
+    {
+        return roomNode;
+    }
+    return null;
+}
+
+
     #region Editor Code
 
     // The following code should only run in the Unity Editor
