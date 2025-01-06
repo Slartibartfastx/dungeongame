@@ -3,11 +3,51 @@
   "WorkspaceRootPath": "D:\\blmproje\\Proje\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|d:\\blmproje\\proje\\assets\\scripts\\health\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|d:\\blmproje\\proje\\assets\\scripts\\player\\animplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\animplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|d:\\blmproje\\proje\\assets\\scripts\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|D:\\blmproje\\Proje\\assets\\scripts\\movements\\idle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\movements\\idle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|D:\\blmproje\\Proje\\assets\\scripts\\movements\\idleevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\movements\\idleevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|D:\\blmproje\\Proje\\assets\\scripts\\weapons\\aimweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\weapons\\aimweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|D:\\blmproje\\Proje\\assets\\scripts\\weapons\\aimweaponevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\weapons\\aimweaponevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|D:\\blmproje\\Proje\\assets\\scripts\\misc\\settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\misc\\settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|D:\\blmproje\\Proje\\assets\\scripts\\utilities\\helperutilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\utilities\\helperutilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|D:\\blmproje\\Proje\\assets\\scripts\\enums\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enums\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\blmproje\\Proje\\Assets\\Scripts\\GameManager\\GameManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\GameManager\\GameManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|D:\\blmproje\\Proje\\assets\\scripts\\health\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\health\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|d:\\blmproje\\proje\\assets\\scripts\\gamemanager\\gameresources.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|D:\\blmproje\\Proje\\assets\\scripts\\gamemanager\\gameresources.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager\\gameresources.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -17,10 +57,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|D:\\blmproje\\Proje\\assets\\scripts\\player\\playerdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|D:\\blmproje\\Proje\\assets\\scripts\\utilities\\helperutilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\utilities\\helperutilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,19 +71,127 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "AnimPlayer.cs",
+              "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Player\\AnimPlayer.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\AnimPlayer.cs",
+              "ToolTip": "D:\\blmproje\\Proje\\Assets\\Scripts\\Player\\AnimPlayer.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\AnimPlayer.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAIwBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T08:39:13.311Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Idle.cs",
+              "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Movements\\Idle.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Movements\\Idle.cs",
+              "ToolTip": "D:\\blmproje\\Proje\\Assets\\Scripts\\Movements\\Idle.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Movements\\Idle.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAgwCoAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T08:35:23.031Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IdleEvent.cs",
+              "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Movements\\IdleEvent.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Movements\\IdleEvent.cs",
+              "ToolTip": "D:\\blmproje\\Proje\\Assets\\Scripts\\Movements\\IdleEvent.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Movements\\IdleEvent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T08:34:33.775Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AimWeapon.cs",
+              "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Weapons\\AimWeapon.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Weapons\\AimWeapon.cs",
+              "ToolTip": "D:\\blmproje\\Proje\\Assets\\Scripts\\Weapons\\AimWeapon.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Weapons\\AimWeapon.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAwwC4AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T08:32:06.965Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AimWeaponEvent.cs",
+              "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Weapons\\AimWeaponEvent.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Weapons\\AimWeaponEvent.cs",
+              "ToolTip": "D:\\blmproje\\Proje\\Assets\\Scripts\\Weapons\\AimWeaponEvent.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Weapons\\AimWeaponEvent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T08:30:06.197Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Settings.cs",
+              "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Misc\\Settings.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Misc\\Settings.cs",
+              "ToolTip": "D:\\blmproje\\Proje\\Assets\\Scripts\\Misc\\Settings.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Misc\\Settings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T08:22:35.139Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Enums.cs",
+              "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Enums\\Enums.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enums\\Enums.cs",
+              "ToolTip": "D:\\blmproje\\Proje\\Assets\\Scripts\\Enums\\Enums.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enums\\Enums.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwCMAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T08:00:32.338Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\GameManager\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager\\GameManager.cs",
+              "ToolTip": "D:\\blmproje\\Proje\\Assets\\Scripts\\GameManager\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameManager\\GameManager.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T07:49:41.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Player.cs",
+              "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Player\\Player.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Player.cs",
+              "ToolTip": "D:\\blmproje\\Proje\\Assets\\Scripts\\Player\\Player.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\Player.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAswCEAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-05T14:49:12.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Health.cs",
               "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Health\\Health.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Health\\Health.cs",
               "ToolTip": "D:\\blmproje\\Proje\\Assets\\Scripts\\Health\\Health.cs",
               "RelativeToolTip": "Assets\\Scripts\\Health\\Health.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-05T14:46:31.258Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-05T14:46:31.258Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 11,
               "Title": "GameResources.cs",
               "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\GameManager\\GameResources.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager\\GameResources.cs",
@@ -55,12 +199,11 @@
               "RelativeToolTip": "Assets\\Scripts\\GameManager\\GameResources.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAwwB4AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-05T14:45:13.785Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-05T14:45:13.785Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 12,
               "Title": "CurrentPlayer.cs",
               "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Player\\CurrentPlayer.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\CurrentPlayer.cs",
@@ -72,25 +215,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 13,
               "Title": "PlayerDetails.cs",
               "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Player\\PlayerDetails.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerDetails.cs",
               "ToolTip": "D:\\blmproje\\Proje\\Assets\\Scripts\\Player\\PlayerDetails.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerDetails.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAtwBsAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAtwBsAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-05T14:33:36.087Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "HelperUtilities.cs",
               "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Utilities\\HelperUtilities.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Utilities\\HelperUtilities.cs",
               "ToolTip": "D:\\blmproje\\Proje\\Assets\\Scripts\\Utilities\\HelperUtilities.cs",
               "RelativeToolTip": "Assets\\Scripts\\Utilities\\HelperUtilities.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAwwEYAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAwwD8AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-05T14:26:57.223Z"
             }
