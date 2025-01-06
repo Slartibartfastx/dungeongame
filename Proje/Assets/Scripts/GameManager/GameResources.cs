@@ -28,5 +28,6 @@ public class GameResources : MonoBehaviour
 
     public NodeTypeListScriptableObject roomNodeTypeList;
 
+    public CurrentPlayer currentPlayer;
 
 }
