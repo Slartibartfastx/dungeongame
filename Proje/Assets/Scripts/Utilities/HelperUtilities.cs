@@ -136,5 +136,22 @@ public static class HelperUtilities
 
         return error;
     }
+    public static bool ValidateCheckPositiveRange(Object thisObj, string fieldNameMin, float valueToCheckMin, string fieldNameMaximum, float valueToCheckMax, bool isZeroAllowed)
+    {
+        bool error = false;
+        if (valueToCheckMin > valueToCheckMax)
+        {
+            Debug.Log(fieldNameMin + " must be less than or equal to " + fieldNameMaximum + " in object " + thisObj.name.ToString());
+            error = true;
+        }
+
+        if (ValidateCheckPositiveValue(thisObj, fieldNameMin, valueToCheckMin, isZeroAllowed)) error = true;
+
+        if (ValidateCheckPositiveValue(thisObj, fieldNameMaximum, valueToCheckMax, isZeroAllowed)) error = true;
+
+        return error;
+    }
+
+
 
 }

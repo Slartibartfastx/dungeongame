@@ -5,6 +5,8 @@ using UnityEngine.Rendering;
 #region REQUIRE COMPONENTS
 /*[RequireComponent(typeof(SortingGroup))]
 [RequireComponent(typeof(SpriteRenderer))]
+[RequireComponent(typeof(MovementByVelocity))]
+[RequireComponent(typeof(MovementByVelocityEvent))]
 [RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(BoxCollider2D))]
 [RequireComponent(typeof(PolygonCollider2D))]
@@ -20,6 +22,7 @@ using UnityEngine.Rendering;
 public class Player : MonoBehaviour
 {
     [HideInInspector] public PlayerDetails playerDetails;
+    [HideInInspector] public MovementByVelocityEvent movByVelEvent;
     [HideInInspector] public Health hp;
     [HideInInspector] public SpriteRenderer spriteRenderer;
     [HideInInspector] public Animator animator;
@@ -28,6 +31,7 @@ public class Player : MonoBehaviour
 
     private void Awake()
     {
+        movByVelEvent = GetComponent<MovementByVelocityEvent>();
         hp = GetComponent<Health>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();

@@ -5,14 +5,16 @@ using UnityEngine;
 public class PlayerControl : MonoBehaviour
 {
     [SerializeField] private Transform weaponShootPosition;
-
+    [SerializeField] private MovementDetails movDetails;
 
     private Player player;
-
+    private float movSpeed;
 
     private void Awake()
     {
         player = GetComponent<Player>();
+
+        movSpeed = movDetails.GetMoveSpeed();
     }
 
     private void Update()
@@ -24,7 +26,26 @@ public class PlayerControl : MonoBehaviour
 
     private void MovInput()
     {
-        player.idleEvent.CallIdleEvent();
+        float horizontalMov = Input.GetAxis("Horizontal");
+        float verticalMov = Input.GetAxis("Vertical");
+
+        Vector2 dir = new Vector2(horizontalMov, verticalMov);
+
+        if (horizontalMov != 0f && verticalMov != 0f)
+        {
+            dir *= 0.7f;
+        }
+
+        if (dir != Vector2.zero)
+        {
+            player.movByVelEvent.CallMovementByVelocityEvent(dir, movSpeed);
+
+        }
+        else
+        {
+            player.idleEvent.CallIdleEvent();
+        }
+        
     }
 
     private void WepInput()
@@ -53,4 +74,15 @@ public class PlayerControl : MonoBehaviour
 
         player.aimWeaponEvent.CallAimWeaponEvent(playerAimDir, playerAngDeg, wepAngDeg, wepDir);
     }
+
+    #region VALIDATION
+
+#if UNITY_EDITOR
+
+    private void OnValidate()
+    {
+        HelperUtilities.ValidateCheckNullValue(this, nameof(movDetails), movDetails);
+    }
+#endif
+    #endregion
 }

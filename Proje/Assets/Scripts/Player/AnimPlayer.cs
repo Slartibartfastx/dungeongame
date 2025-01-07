@@ -17,16 +17,20 @@ public class AnimatePlayer : MonoBehaviour
 
     private void OnEnable()
     {
+        player.movByVelEvent.OnMovementByVelocity += MovByVelEvent_OnMovByVel;
 
         // Subscribe to idle event
         player.idleEvent.OnIdle += IdleEvent_OnIdle;
 
         // Subscribe to weapon aim event
         player.aimWeaponEvent.OnWeaponAim += AimWeaponEvent_OnWeaponAim;
+
+  
     }
 
     private void OnDisable()
     {
+        player.movByVelEvent.OnMovementByVelocity -= MovByVelEvent_OnMovByVel;
 
         // Unsubscribe from idle event
         player.idleEvent.OnIdle -= IdleEvent_OnIdle;
@@ -44,6 +48,11 @@ public class AnimatePlayer : MonoBehaviour
     {
 
         SetIdleAnimationParameters();
+    }
+
+    private void MovByVelEvent_OnMovByVel(MovementByVelocityEvent movementByVelocityEvent, MovementByVelocityArgs movementByVelocityArgs)
+    {
+        SetMovementAnimationParameters();
     }
 
     /// <summary>
