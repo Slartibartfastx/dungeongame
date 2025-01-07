@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeTypeName: Medium Room
   displayInNodeGraphEditor: 1
-  roomType: 6
+  roomType: 0

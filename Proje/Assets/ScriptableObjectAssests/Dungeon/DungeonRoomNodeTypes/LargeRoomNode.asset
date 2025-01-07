@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeTypeName: Large Room
   displayInNodeGraphEditor: 1
-  roomType: 8
+  roomType: 0

@@ -1,38 +1,24 @@
-public enum Oriantation
+﻿public enum Orientation
 {
-    n,
-    e,
-    s,
-    w,
+    north,
+    east,
+    south,
+    west,
     none
-
-
-}
-
-
-public enum AimDir
-{
-    Up,
-    Down,
-    Right,
-    Left,   
-    UpRight,
-    UpLeft
-
 }
 
 public enum GameState
 {
-    gameStarted,
-    playingLvl,
-    engagingEnemy,
-    bossFight,
-    engagingBoss,
-    lvlComplete,
-    Won,
-    Lost,
-    Paused,
-    dungeonMap,
-    restart
-
+    GameInitialization,       // gameStarted
+    InLevelPlay,              // playingLevel
+    EncounteringEnemies,      // engagingEnemies
+    BossBattlePreparation,    // bossStage
+    FacingBoss,               // engagingBoss
+    LevelSuccess,             // levelCompleted
+    VictoryAchieved,          // gameWon
+    DefeatEncountered,        // gameLost
+    GameplayPaused,           // gamePaused
+    ViewingDungeonMap,        // dungeonOverviewMap
+    ResettingGame             // restartGame
 }
+

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEditor;
 using UnityEngine;
+using static NodeTypeScriptableObject;
 
 
 [CreateAssetMenu(fileName = "Node Graph", menuName = "Scriptable Objects/Dungeon/Node Graph")]
@@ -33,6 +34,27 @@ public NodeScriptableObject GetRoomNode(string roomNodeID)
     }
     return null;
 }
+
+    public NodeScriptableObject GetRoomNode(RoomType roomType)
+    {
+        // Assuming that 'roomNodeType' is a property of type 'NodeTypeScriptableObject' that holds the enum
+        var node = nodeList.FirstOrDefault(x => x.roomNodeType.roomType == roomType);
+
+        if (node != null)
+        {
+            return node;
+        }
+
+        return null;
+    }
+
+
+    public IEnumerable<NodeScriptableObject> GetChildRoomNodes(NodeScriptableObject parentRoomNode)
+    {
+        return parentRoomNode.childRoomNodeIDList
+            .Select(childNodeID => GetRoomNode(childNodeID))
+            .Where(childNode => childNode != null); // Ensure no nulls are returned
+    }
 
 
     #region Editor Code
