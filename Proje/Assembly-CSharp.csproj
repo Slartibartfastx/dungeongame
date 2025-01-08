@@ -66,11 +66,13 @@
     <Compile Include="Assets\Scripts\Utilities\HelperUtilities.cs" />
     <Compile Include="Assets\Scripts\Dungeon\DungeonBuilder.cs" />
     <Compile Include="Assets\Scripts\Enums\Enums.cs" />
+    <Compile Include="Assets\Scripts\Dungeon\DoorLighting.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerDetails.cs" />
     <Compile Include="Assets\Scripts\NodeGraph\NodeScriptableObject.cs" />
     <Compile Include="Assets\Scripts\Misc\Singleton.cs" />
     <Compile Include="Assets\Scripts\Movements\Idle.cs" />
     <Compile Include="Assets\Scripts\Weapons\AimWeapon.cs" />
+    <Compile Include="Assets\Scripts\Dungeon\RoomLighting.cs" />
     <Compile Include="Assets\Scripts\Movements\MovementByVelocity.cs" />
     <Compile Include="Assets\Scripts\Dungeon\Doorway.cs" />
     <Compile Include="Assets\Scripts\Dungeon\InstantiatedRoom.cs" />
@@ -80,11 +82,13 @@
     <Compile Include="Assets\Scripts\Health\Health.cs" />
     <Compile Include="Assets\Scripts\Movements\MovementDetails.cs" />
     <Compile Include="Assets\Scripts\Dungeon\DungeonLevelScriptableObject.cs" />
+    <Compile Include="Assets\Scripts\Dungeon\DoorScript.cs" />
     <Compile Include="Assets\Scripts\Movements\IdleEvent.cs" />
     <Compile Include="Assets\Scripts\Dungeon\RoomTemplateSO.cs" />
     <Compile Include="Assets\Scripts\GameManager\GameResources.cs" />
     <Compile Include="Assets\Scripts\Movements\MovementByVelocityEvent.cs" />
     <Compile Include="Assets\Scripts\Misc\Settings.cs" />
+    <Compile Include="Assets\Scripts\StaticEvents\StaticEvent.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerControl.cs" />
     <Compile Include="Assets\Scripts\NodeGraph\NodeTypeScriptableObject.cs" />
     <Compile Include="Assets\Scripts\Player\AnimPlayer.cs" />

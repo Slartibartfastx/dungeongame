@@ -45,14 +45,107 @@ public class InstantiatedRoom : MonoBehaviour
         roomColliderBounds = boxCollider2D.bounds;
 
     }
+
+
+    // Trigger room changed event when player enters a room
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        // If the player triggered the collider
+        if (collision.tag == Settings.playerTag && room != GameManager.Instance.GetCurrentRoom())
+        {
+            // Set room as visited
+            this.room.isPreviouslyVisited = true;
+
+            // Call room changed event
+            StaticEventHandler.CallRoomChangedEvent(room);
+        }
+    }
     /// <summary>
     /// Initialise The Instantiated Room
     /// </summary>
     public void Initialise(GameObject roomGameobject)
     {
         PopulateTilemapMemberVariables(roomGameobject);
+        BlockOffUnusedDoorWays();
+        AddDoorsToRooms();
         DisableCollisionTilemapRenderer();
 
+    }
+
+    /// <summary>
+    /// Block Off Unused Doorways In The Room
+    /// </summary>
+    private void BlockOffUnusedDoorWays()
+    {
+        if (room == null || room.doorWayList == null) return;
+
+        foreach (Doorway doorway in room.doorWayList)
+        {
+            if (doorway.isConnected) continue;
+
+            // Block unconnected doorways across all relevant tilemaps
+            Tilemap[] tilemaps = { collisionTilemap, minimapTilemap, groundTilemap, decoration1Tilemap, decoration2Tilemap, frontTilemap };
+            foreach (Tilemap tilemap in tilemaps)
+            {
+                if (tilemap != null)
+                    BlockDoorway(tilemap, doorway);
+            }
+        }
+    }
+
+    /// <summary>
+    /// Block a doorway on a tilemap layer
+    /// </summary>
+    private void BlockDoorway(Tilemap tilemap, Doorway doorway)
+    {
+        switch (doorway.orientation)
+        {
+            case Orientation.north:
+            case Orientation.south:
+                BlockDoorwayTiles(tilemap, doorway, isHorizontal: true);
+                break;
+
+            case Orientation.east:
+            case Orientation.west:
+                BlockDoorwayTiles(tilemap, doorway, isHorizontal: false);
+                break;
+
+            case Orientation.none:
+                // Do nothing for no orientation
+                break;
+        }
+    }
+
+    /// <summary>
+    /// Block doorway tiles based on orientation
+    /// </summary>
+    private void BlockDoorwayTiles(Tilemap tilemap, Doorway doorway, bool isHorizontal)
+    {
+        Vector2Int startPosition = doorway.doorwayStartCopyPosition;
+
+        int width = doorway.doorwayCopyTileWidth;
+        int height = doorway.doorwayCopyTileHeight;
+
+        // Determine the direction of blocking
+        int xOffset = isHorizontal ? 1 : 0;
+        int yOffset = isHorizontal ? 0 : -1;
+
+        // Loop through tiles and copy to block the doorway
+        for (int x = 0; x < width; x++)
+        {
+            for (int y = 0; y < height; y++)
+            {
+                Vector3Int sourcePosition = new Vector3Int(startPosition.x + x, startPosition.y - y, 0);
+                Vector3Int targetPosition = new Vector3Int(startPosition.x + x + xOffset, startPosition.y - y + yOffset, 0);
+
+                // Copy tile and transformation matrix
+                TileBase tile = tilemap.GetTile(sourcePosition);
+                Matrix4x4 transformMatrix = tilemap.GetTransformMatrix(sourcePosition);
+
+                tilemap.SetTile(targetPosition, tile);
+                tilemap.SetTransformMatrix(targetPosition, transformMatrix);
+            }
+        }
     }
 
     /// <summary>
@@ -107,7 +200,77 @@ public class InstantiatedRoom : MonoBehaviour
 
     }
 
-  
+
+
+    /// <summary>
+    /// Add opening doors if this is not a corridor room
+    /// </summary>
+    private void AddDoorsToRooms()
+    {
+        // if the room is a corridor then return
+        if (room.roomNodeType.roomType == NodeTypeScriptableObject.RoomType.CorridorEW ||
+     room.roomNodeType.roomType == NodeTypeScriptableObject.RoomType.CorridorNS) return;
+
+            // Instantiate door prefabs at doorway positions
+            foreach (Doorway doorway in room.doorWayList)
+        {
+
+            // if the doorway prefab isn't null and the doorway is connected
+            if (doorway.doorPrefab != null && doorway.isConnected)
+            {
+                float tileDistance = Settings.tileSizePixels / Settings.pixelsPerUnit;
+
+                GameObject door = null;
+
+                if (doorway.orientation == Orientation.north)
+                {
+                    // create door with parent as the room
+                    door = Instantiate(doorway.doorPrefab, gameObject.transform);
+                    door.transform.localPosition = new Vector3(doorway.position.x + tileDistance / 2f, doorway.position.y + tileDistance, 0f);
+                }
+                else if (doorway.orientation == Orientation.south)
+                {
+                    // create door with parent as the room
+                    door = Instantiate(doorway.doorPrefab, gameObject.transform);
+                    door.transform.localPosition = new Vector3(doorway.position.x + tileDistance / 2f, doorway.position.y, 0f);
+                }
+                else if (doorway.orientation == Orientation.east)
+                {
+                    // create door with parent as the room
+                    door = Instantiate(doorway.doorPrefab, gameObject.transform);
+                    door.transform.localPosition = new Vector3(doorway.position.x + tileDistance, doorway.position.y + tileDistance * 1.25f, 0f);
+                }
+                else if (doorway.orientation == Orientation.west)
+                {
+                    // create door with parent as the room
+                    door = Instantiate(doorway.doorPrefab, gameObject.transform);
+                    door.transform.localPosition = new Vector3(doorway.position.x, doorway.position.y + tileDistance * 1.25f, 0f);
+                }
+
+                // Get door component
+                DoorScript doorComponent = door.GetComponent<DoorScript>();
+
+                // Set if door is part of a boss room
+                if (room.roomNodeType.roomType == NodeTypeScriptableObject.RoomType.BossRoom)
+                {
+                    doorComponent.isBossRoomDoor = true;
+
+                    // lock the door to prevent access to the room
+                    doorComponent.LockDoor();
+
+                    // Instantiate skull icon for minimap by door
+                   // GameObject skullIcon = Instantiate(GameResources.Instance.minimapSkullPrefab, gameObject.transform);
+                    //skullIcon.transform.localPosition = door.transform.localPosition;
+
+                }
+
+            }
+
+        }
+
+    }
+
+
 
     #region Validation
 

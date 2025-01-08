@@ -23,6 +23,25 @@ public class PlayerControl : MonoBehaviour
         WepInput();
     }
 
+    private void Start()
+    {
+
+        // Set Starting Weapon
+        //SetStartingWeapon();
+
+        // Set player animation speed
+        SetPlayerAnimationSpeed();
+
+    }
+
+    /// <summary>
+    /// Set player animator speed to match movement speed
+    /// </summary>
+    private void SetPlayerAnimationSpeed()
+    {
+        // Set animator speed to match movement speed
+        player.animator.speed = movSpeed / Settings.baseSpeedForPlayerAnimations;
+    }
 
     private void MovInput()
     {

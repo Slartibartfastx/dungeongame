@@ -14,17 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   guid: ecb6fec712ddf054f880c013acb29980
   prefab: {fileID: 4327421925113694216, guid: c4ef429a4377e0e4686aacab10ce3cc8, type: 3}
-  previousPrefab: {fileID: 4327421925113694216, guid: c4ef429a4377e0e4686aacab10ce3cc8,
-    type: 3}
-  battleMusic: {fileID: 11400000, guid: a4e1f8d956378ae4a8ec12db302cc572, type: 2}
-  ambientMusic: {fileID: 11400000, guid: 2c856c280f259724c95ab5c581332206, type: 2}
-  roomNodeType: {fileID: 11400000, guid: 26c37192a6b3f914b83aa3c1ca94be31, type: 2}
+  previousPrefab: {fileID: 4327421925113694216, guid: c4ef429a4377e0e4686aacab10ce3cc8, type: 3}
+  roomNodeType: {fileID: 0}
   lowerBounds: {x: 15, y: 4}
   upperBounds: {x: 35, y: 29}
   doorwayList:
   - position: {x: 25, y: 29}
     orientation: 0
-    doorPrefab: {fileID: 0}
+    doorPrefab: {fileID: 6896077622049520316, guid: f4c8d2006ed1cc7408d6e3de6e5e5d5f, type: 3}
     doorwayStartCopyPosition: {x: 22, y: 29}
     doorwayCopyTileWidth: 5
     doorwayCopyTileHeight: 9
@@ -32,7 +29,7 @@ MonoBehaviour:
     isUnavailable: 0
   - position: {x: 25, y: 4}
     orientation: 2
-    doorPrefab: {fileID: 0}
+    doorPrefab: {fileID: 3107679051190242039, guid: 1035aa052efb96e448a177041056644d, type: 3}
     doorwayStartCopyPosition: {x: 22, y: 7}
     doorwayCopyTileWidth: 5
     doorwayCopyTileHeight: 4
@@ -40,7 +37,7 @@ MonoBehaviour:
     isUnavailable: 0
   - position: {x: 35, y: 14}
     orientation: 1
-    doorPrefab: {fileID: 0}
+    doorPrefab: {fileID: 6896077622049520316, guid: f4c8d2006ed1cc7408d6e3de6e5e5d5f, type: 3}
     doorwayStartCopyPosition: {x: 32, y: 20}
     doorwayCopyTileWidth: 4
     doorwayCopyTileHeight: 8
@@ -48,7 +45,7 @@ MonoBehaviour:
     isUnavailable: 0
   - position: {x: 15, y: 14}
     orientation: 3
-    doorPrefab: {fileID: 0}
+    doorPrefab: {fileID: 6896077622049520316, guid: f4c8d2006ed1cc7408d6e3de6e5e5d5f, type: 3}
     doorwayStartCopyPosition: {x: 15, y: 20}
     doorwayCopyTileWidth: 4
     doorwayCopyTileHeight: 8
@@ -59,5 +56,3 @@ MonoBehaviour:
   - {x: 18, y: 14}
   - {x: 32, y: 14}
   - {x: 25, y: 8}
-  enemiesByLevelList: []
-  roomEnemySpawnParametersList: []
