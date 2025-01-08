@@ -5,7 +5,7 @@ using UnityEngine.UIElements;
 
 [RequireComponent(typeof(Player))]
 [DisallowMultipleComponent]
-public class AnimatePlayer : MonoBehaviour
+public class AnimPlayer : MonoBehaviour
 {
     private Player player;
 
@@ -106,6 +106,7 @@ public class AnimatePlayer : MonoBehaviour
     /// </summary>
     private void SetAimWeaponAnimationParameters(AimDir aimDirection)
     {
+        Debug.Log(aimDirection);
         // Set aim direction
         switch (aimDirection)
         {

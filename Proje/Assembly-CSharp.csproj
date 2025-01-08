@@ -60,19 +60,35 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.50f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Misc\ScreenCursor.cs" />
     <Compile Include="Assets\Scripts\NodeGraph\NodeTypeListScriptableObject.cs" />
     <Compile Include="Assets\Scripts\GameManager\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Utilities\HelperUtilities.cs" />
     <Compile Include="Assets\Scripts\Dungeon\DungeonBuilder.cs" />
     <Compile Include="Assets\Scripts\Enums\Enums.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerDetails.cs" />
     <Compile Include="Assets\Scripts\NodeGraph\NodeScriptableObject.cs" />
     <Compile Include="Assets\Scripts\Misc\Singleton.cs" />
+    <Compile Include="Assets\Scripts\Movements\Idle.cs" />
+    <Compile Include="Assets\Scripts\Weapons\AimWeapon.cs" />
+    <Compile Include="Assets\Scripts\Movements\MovementByVelocity.cs" />
     <Compile Include="Assets\Scripts\Dungeon\Doorway.cs" />
     <Compile Include="Assets\Scripts\Dungeon\InstantiatedRoom.cs" />
+    <Compile Include="Assets\Scripts\Player\CurrentPlayer.cs" />
+    <Compile Include="Assets\Scripts\Misc\CamTarget.cs" />
+    <Compile Include="Assets\Scripts\Player\Player.cs" />
+    <Compile Include="Assets\Scripts\Health\Health.cs" />
+    <Compile Include="Assets\Scripts\Movements\MovementDetails.cs" />
     <Compile Include="Assets\Scripts\Dungeon\DungeonLevelScriptableObject.cs" />
+    <Compile Include="Assets\Scripts\Movements\IdleEvent.cs" />
     <Compile Include="Assets\Scripts\Dungeon\RoomTemplateSO.cs" />
     <Compile Include="Assets\Scripts\GameManager\GameResources.cs" />
+    <Compile Include="Assets\Scripts\Movements\MovementByVelocityEvent.cs" />
     <Compile Include="Assets\Scripts\Misc\Settings.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerControl.cs" />
     <Compile Include="Assets\Scripts\NodeGraph\NodeTypeScriptableObject.cs" />
+    <Compile Include="Assets\Scripts\Player\AnimPlayer.cs" />
+    <Compile Include="Assets\Scripts\Weapons\AimWeaponEvent.cs" />
     <Compile Include="Assets\Scripts\NodeGraph\NodeGraphObject.cs" />
     <Compile Include="Assets\Scripts\Dungeon\Room.cs" />
   </ItemGroup>

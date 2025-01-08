@@ -31,15 +31,63 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     #endregion Tooltip
 
     [SerializeField] private int currentDungeonLevelListIndex = 0;
+    private Room currentRoom;
+    private Room previousRoom;
+    private PlayerDetails playerDetails;
+    private Player player;
 
     [HideInInspector] public GameState gameState;
+
+    [SerializeField] private GameResources gameResources;
+
+
+    protected override void Awake()
+    {
+        // Call base class
+        base.Awake();
+
+        // Set player details - saved in current player scriptable object from the main menu
+        playerDetails = GameResources.Instance.currentPlayer.playerDetails;
+
+        // Instantiate player
+        Debug.Log(GameResources.Instance);
+        Debug.Log(GameResources.Instance.currentPlayer);
+        Debug.Log(playerDetails);
+        InstantiatePlayer();
+
+    }
+
+    /// <summary>
+    /// Create player in scene at position
+    /// </summary>
+    private void InstantiatePlayer()
+    {
+        // Instantiate player
+        GameObject playerGameObject = Instantiate(playerDetails.playerPrefab);
+
+        // Initialize Player
+        player = playerGameObject.GetComponent<Player>();
+        Debug.Log(player);
+        Debug.Log(playerDetails);
+        player.Initalize(playerDetails);
+
+    }
 
     // Start is called before the first frame update
     private void Start()
     {
         gameState = GameState.GameInitialization;
 
+        if (gameResources == null)
+        {
+            Debug.LogError("GameResources is not assigned!");
+        }
+        else
+        {
+            Debug.Log("GameResources loaded successfully.");
+        }
     }
+
 
     // Update is called once per frame
     private void Update()
@@ -78,8 +126,26 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
         {
             Debug.LogError("Couldn't build dungeon from specified rooms and node graphs");
         }
+
+        player.gameObject.transform.position = new Vector3((currentRoom.lowerBounds.x + currentRoom.upperBounds.x) / 2f, (currentRoom.lowerBounds.y + currentRoom.upperBounds.y) / 2f, 0f);
+        
+        player.gameObject.transform.position = HelperUtilities.GetNearestSpawnPoint(player.gameObject.transform.position);
     }
 
+    public Player GetPlayer()   
+    {
+
+        return player;
+    }
+    public Room GetCurrentRoom()
+    {
+        return currentRoom;
+    }
+    public void setRoom(Room room)
+    {
+        previousRoom = currentRoom;
+        currentRoom = room;
+    }
     #region Validation
 
 #if UNITY_EDITOR

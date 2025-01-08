@@ -22,3 +22,12 @@ public enum GameState
     ResettingGame             // restartGame
 }
 
+public enum AimDir
+{
+    Up,
+    Down,
+    Right,
+    Left,
+    UpRight,
+    UpLeft
+}

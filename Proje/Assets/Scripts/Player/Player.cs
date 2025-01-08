@@ -39,15 +39,14 @@ public class Player : MonoBehaviour
         aimWeaponEvent = GetComponent<AimWeaponEvent>();
     }
 
-    public void Init(PlayerDetails playerDetails)
+    public void Initalize(PlayerDetails playerDetailss)
     {
-        this.playerDetails = playerDetails;
-
+        this.playerDetails = playerDetailss;
         setPlayerHP();
     }
 
     public void setPlayerHP()
     {
-        hp.setStartingHP(playerDetails.playerHealthAmount);
+        hp.setStartingHP(100);
     }
 }

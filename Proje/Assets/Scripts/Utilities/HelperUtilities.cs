@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public static class HelperUtilities
 {
@@ -24,50 +26,59 @@ public static class HelperUtilities
     {
 
         float rad = Mathf.Atan2(pos.y, pos.x);
-        float deg = rad * Mathf.Deg2Rad;
+        float deg = rad * Mathf.Rad2Deg;
 
         return deg;
     }
 
-    public static AimDir getAimdir(float angle)
+    public static AimDir getAimdir(float angleDegrees)
     {
-        AimDir aimdir;
-
-        if (angle >= 22f && angle <= 67f)
+        AimDir aimDirection;
+        Debug.Log(angleDegrees);
+        // Set player direction
+        //Up Right
+        if (angleDegrees >= 22f && angleDegrees <= 67f)
         {
-            aimdir = AimDir.UpRight;
+            aimDirection = AimDir.UpRight;
         }
-        else if (angle > 67f && angle <= 112f)
+        // Up
+        else if (angleDegrees > 67f && angleDegrees <= 112f)
         {
-            aimdir = AimDir.Up;
+            aimDirection = AimDir.Up;
         }
-        else if (angle > 112f && angle <= 158f)
+        // Up Left
+        else if (angleDegrees > 112f && angleDegrees <= 158f)
         {
-            aimdir = AimDir.UpLeft;
+            aimDirection = AimDir.UpLeft;
         }
-        else if ((angle > 158f && angle <= 180f) || (angle > -180 && angle <= -135f))
+        // Left
+        else if ((angleDegrees <= 180f && angleDegrees > 158f) || (angleDegrees > -180 && angleDegrees <= -135f))
         {
-            aimdir = AimDir.Left;
+            aimDirection = AimDir.Left;
         }
-        else if (angle > -135f && angle <= -45f)
+        // Down
+        else if ((angleDegrees > -135f && angleDegrees <= -45f))
         {
-            aimdir = AimDir.Down;
+            aimDirection = AimDir.Down;
         }
-        else if ((angle > -45f && angle <= 0f) || (angle > 0 && angle <= 22f))
+        // Right
+        else if ((angleDegrees > -45f && angleDegrees <= 0f) || (angleDegrees > 0 && angleDegrees < 22f))
         {
-            aimdir = AimDir.Right;
+            aimDirection = AimDir.Right;
         }
         else
         {
-            aimdir = AimDir.Right;
+            aimDirection = AimDir.Right;
         }
-        return aimdir;
+        Debug.Log(aimDirection);
+        return aimDirection;
+
 
     }
-        /// <summary>
-        /// string null ya da empty mi kontrol eder
-        /// </summary>
-        public static bool ValidateCheckEmptyString(Object thisObject, string fieldName, string stringToCheck)
+    /// <summary>
+    /// string null ya da empty mi kontrol eder
+    /// </summary>
+    public static bool ValidateCheckEmptyString(Object thisObject, string fieldName, string stringToCheck)
     {
         if (string.IsNullOrEmpty(stringToCheck))
         {
@@ -152,6 +163,27 @@ public static class HelperUtilities
         return error;
     }
 
+    public static Vector3 GetNearestSpawnPoint(Vector3 playerPosition)
+    {
+        Room currentRoom = GameManager.Instance.GetCurrentRoom();
 
+        Grid grid = currentRoom.instantiatedRoom.grid;
 
+        Vector3 nearestSpawnPosition = new Vector3(10000f, 10000f, 0f);
+
+        // Loop through room spawn positions
+        foreach (Vector2Int spawnPositionGrid in currentRoom.spawnPositionArray)
+        {
+            // convert the spawn grid positions to world positions
+            Vector3 spawnPositionWorld = grid.CellToWorld((Vector3Int)spawnPositionGrid);
+
+            if (Vector3.Distance(spawnPositionWorld, playerPosition) < Vector3.Distance(nearestSpawnPosition, playerPosition))
+            {
+                nearestSpawnPosition = spawnPositionWorld;
+            }
+        }
+
+        return nearestSpawnPosition;
+
+    }
 }
