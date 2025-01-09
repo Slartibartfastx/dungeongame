@@ -3,20 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
 #region REQUIRE COMPONENTS
-/*[RequireComponent(typeof(SortingGroup))]
+[RequireComponent(typeof(SortingGroup))]
 [RequireComponent(typeof(SpriteRenderer))]
 [RequireComponent(typeof(MovementByVelocity))]
 [RequireComponent(typeof(MovementByVelocityEvent))]
 [RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(BoxCollider2D))]
 [RequireComponent(typeof(PolygonCollider2D))]
-[RequireComponent(typeof(AnimatePlayer))]
+[RequireComponent(typeof(WeaponFiredEvent))]
+[RequireComponent(typeof(FireWeaponEvent))]
+[RequireComponent(typeof(FireWeapon))]
+[RequireComponent(typeof(AnimPlayer))]
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(IdleEvent))]
 [RequireComponent(typeof(Idle))]
+[RequireComponent(typeof(ActiveWeapon))]
 [RequireComponent(typeof(AimWeaponEvent))]
 [RequireComponent(typeof(AimWeapon))]
-*/
+[RequireComponent(typeof(SetActiveWeaponEvent))]
 [DisallowMultipleComponent]
 #endregion REQUIRE COMPONENTS
 public class Player : MonoBehaviour
@@ -28,7 +32,12 @@ public class Player : MonoBehaviour
     [HideInInspector] public Animator animator;
     [HideInInspector] public IdleEvent idleEvent;
     [HideInInspector] public AimWeaponEvent aimWeaponEvent;
-
+    [HideInInspector] public SetActiveWeaponEvent setActiveWepEvent;
+    [HideInInspector] public ActiveWeapon activeWep;
+    [HideInInspector] public FireWeaponEvent fireWepEvent;
+    [HideInInspector] public WeaponFiredEvent wepFiredEvent;
+    [HideInInspector] public FireWeapon fireWep;
+    public List<Weapon> wepList = new List<Weapon>();
     private void Awake()
     {
         movByVelEvent = GetComponent<MovementByVelocityEvent>();
@@ -37,16 +46,49 @@ public class Player : MonoBehaviour
         animator = GetComponent<Animator>();
         idleEvent = GetComponent<IdleEvent>();
         aimWeaponEvent = GetComponent<AimWeaponEvent>();
+        setActiveWepEvent = GetComponent<SetActiveWeaponEvent>();
+        activeWep = GetComponent<ActiveWeapon>();
+        fireWepEvent = GetComponent<FireWeaponEvent>();
+        wepFiredEvent = GetComponent<WeaponFiredEvent>(); 
+        fireWep = GetComponent<FireWeapon>();
     }
 
     public void Initalize(PlayerDetails playerDetailss)
     {
         this.playerDetails = playerDetailss;
+        CreatePlayerStartingWeps();
         setPlayerHP();
     }
 
     public void setPlayerHP()
     {
-        hp.setStartingHP(100);
+        hp.setStartingHP(playerDetails.playerHealthAmount);
+    }
+
+    private void CreatePlayerStartingWeps()
+    {
+        wepList.Clear();
+
+        foreach (WeaponDetails wepDetails in playerDetails.startingWeaponList)
+        {
+                AddWepToPlayer(wepDetails);
+        }
+    }
+
+
+    public Weapon AddWepToPlayer(WeaponDetails wepDetails)
+    {
+        Weapon weapon = new Weapon() { wepDetails = wepDetails, wepReloadTimer = 0f, wepClipRemainingAmmo = wepDetails.clipCapacity, wepRemainingAmmo = wepDetails.maxAmmo, isReloading = false };
+
+        // Add the weapon to the list
+        wepList.Add(weapon);
+            
+        // Set weapon position in list
+        weapon.wepListPosition = wepList.Count;
+
+        // Set the added weapon as active
+        setActiveWepEvent.CallSetActiveWeaponEvent(weapon);
+
+        return weapon;
     }
 }

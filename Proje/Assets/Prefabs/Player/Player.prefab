@@ -222,7 +222,7 @@ Transform:
   m_GameObject: {fileID: 1374860421256289313}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.688, y: 0.25, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -254,6 +254,11 @@ GameObject:
   - component: {fileID: -5979901851468893490}
   - component: {fileID: -8334278083731235661}
   - component: {fileID: -1876191706333079416}
+  - component: {fileID: -5823262391233797072}
+  - component: {fileID: 1510151314141438506}
+  - component: {fileID: 1149152464219803510}
+  - component: {fileID: -1151232902518486344}
+  - component: {fileID: -5864423836341819249}
   m_Layer: 10
   m_Name: Player
   m_TagString: Player
@@ -513,6 +518,12 @@ MonoBehaviour:
   animator: {fileID: 0}
   idleEvent: {fileID: 0}
   aimWeaponEvent: {fileID: 0}
+  setActiveWepEvent: {fileID: 0}
+  activeWep: {fileID: 0}
+  fireWepEvent: {fileID: 0}
+  wepFiredEvent: {fileID: 0}
+  fireWep: {fileID: 0}
+  wepList: []
 --- !u!114 &263633222490009949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -586,7 +597,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b9d464f082b35849b80ec9c6f527bd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponShootPosition: {fileID: 1500957197404765995}
   movDetails: {fileID: 11400000, guid: fb4cf5a5549ddc64c80a047298358f68, type: 2}
 --- !u!114 &-5979901851468893490
 MonoBehaviour:
@@ -622,6 +632,70 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62cc253d952b0f44a864e7fd970f5ca9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-5823262391233797072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4348939323579831417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 814add02d9e4ce14e9d1fd7ec2cc8644, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1510151314141438506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4348939323579831417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de889dd476d26514d91c95c08f0a958e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponSpriteRenderer: {fileID: 6208274973441568918}
+  weaponPolygonCollider2D: {fileID: 4945857541788935623}
+  weaponShootPositionTransform: {fileID: 1500957197404765995}
+  weaponEffectPositionTransform: {fileID: 5027576103057833824}
+--- !u!114 &1149152464219803510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4348939323579831417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ff23a20552cebc4c8e0de6f7078913e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-1151232902518486344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4348939323579831417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a74387b3d71544449b205a7677bc763b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-5864423836341819249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4348939323579831417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 924e33ee6e3479d4bab4fc300cef7ab9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &4614161814256923209
@@ -733,7 +807,7 @@ Transform:
   m_GameObject: {fileID: 7937276584151617422}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.125, y: 0, z: 0}
+  m_LocalPosition: {x: -0.15, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

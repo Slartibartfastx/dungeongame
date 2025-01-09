@@ -11,8 +11,8 @@ public class PlayerDetails : ScriptableObject
     public int playerHealthAmount;
     public bool isImmuneAfterHit = false;
     public float hitImmunityTime;
-    //public WeaponDetails startingWeapon;
-    //public List<WeaponDetails> startingWeaponList;
+    public WeaponDetails startingWeapon;
+    public List<WeaponDetails> startingWeaponList;
 
 
     public Sprite playerMiniMapIcon;
@@ -25,11 +25,11 @@ public class PlayerDetails : ScriptableObject
         HelperUtilities.ValidateCheckEmptyString(this, nameof(playerCharacterName), playerCharacterName);
         HelperUtilities.ValidateCheckNullValue(this, nameof(playerPrefab), playerPrefab);
         HelperUtilities.ValidateCheckPositiveValue(this, nameof(playerHealthAmount), playerHealthAmount, false);
-        //HelperUtilities.ValidateCheckNullValue(this, nameof(startingWeapon), startingWeapon);
+        HelperUtilities.ValidateCheckNullValue(this, nameof(startingWeapon), startingWeapon);
         HelperUtilities.ValidateCheckNullValue(this, nameof(playerMiniMapIcon), playerMiniMapIcon);
         HelperUtilities.ValidateCheckNullValue(this, nameof(playerHandSprite), playerHandSprite);
         HelperUtilities.ValidateCheckNullValue(this, nameof(runtimeAnimatorController), runtimeAnimatorController);
-       // HelperUtilities.ValidateCheckEnumerableValues(this, nameof(startingWeaponList), startingWeaponList);
+        HelperUtilities.ValidateCheckEnumerableValues(this, nameof(startingWeaponList), startingWeaponList);
 
         if (isImmuneAfterHit)
         {

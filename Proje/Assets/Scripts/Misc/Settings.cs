@@ -60,5 +60,7 @@ public static class Settings
     public const string playerWeapon = "playerWeapon";
     #endregion
 
-
+    #region FIRING CONTROL
+    public const float useAimAngleDistance = 4f; // hedef mesafesi bu degerden dusukse aim Angle(karakterden hesaplaniyor) kullanilacak, yüksekse weapon Aim Angle kullanilacak
+    #endregion
 }

@@ -53,6 +53,11 @@ public static class HelperUtilities
         return deg;
     }
 
+    public static Vector3 getDirVecFromAng(float angle)
+    {
+        Vector3 dirVec = new Vector3(Mathf.Cos(Mathf.Deg2Rad*angle), Mathf.Sin(Mathf.Deg2Rad*angle),0f);
+        return dirVec;
+    }
     public static AimDir getAimdir(float angleDegrees)
     {
         AimDir aimDirection;
