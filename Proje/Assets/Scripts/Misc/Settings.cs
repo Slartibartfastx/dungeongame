@@ -40,6 +40,9 @@ public static class Settings
     public static int use = Animator.StringToHash("use");
     public static float baseSpeedForPlayerAnimations = 8f;
 
+
+    public static float baseSpeedForEnemyAnimations = 3f;
+
     // Animator parameters - Door
     public static int open = Animator.StringToHash("open");
 

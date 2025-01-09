@@ -20,6 +20,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.59119487
       objectReference: {fileID: 0}
+    - target: {fileID: 2718249672779969238, guid: 898fdfd467270e1438cd5aacceec8b41, type: 3}
+      propertyPath: enemyDetails
+      value: 
+      objectReference: {fileID: 11400000, guid: 5fa54838495c0894ba45e23c9a145245, type: 2}
     - target: {fileID: 3953104098336083259, guid: 898fdfd467270e1438cd5aacceec8b41, type: 3}
       propertyPath: m_Name
       value: Hedusa_Red

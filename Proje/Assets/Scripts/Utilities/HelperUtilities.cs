@@ -61,7 +61,6 @@ public static class HelperUtilities
     public static AimDir getAimdir(float angleDegrees)
     {
         AimDir aimDirection;
-        Debug.Log(angleDegrees);
         // Set player direction
         //Up Right
         if (angleDegrees >= 22f && angleDegrees <= 67f)
@@ -97,7 +96,6 @@ public static class HelperUtilities
         {
             aimDirection = AimDir.Right;
         }
-        Debug.Log(aimDirection);
         return aimDirection;
 
 

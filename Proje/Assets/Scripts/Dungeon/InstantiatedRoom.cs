@@ -314,6 +314,38 @@ public class InstantiatedRoom : MonoBehaviour
     }
 
 
+    /// <summary>
+    /// Lock the room doors
+    /// </summary>
+    public void LockDoors()
+    {
+        // Get all DoorScript components in children of this room object
+        DoorScript[] doorArray = GetComponentsInChildren<DoorScript>();
+
+        // Debugging: Print the number of doors found in the room
+        Debug.Log($"Found {doorArray.Length} doors in the room.");
+
+        // Trigger lock doors for each door found
+        foreach (DoorScript door in doorArray)
+        {
+            // Debugging: Print the door being locked
+            Debug.Log($"Locking door: {door.gameObject.name}");
+
+            door.LockDoor();  // Lock the door
+        }
+
+        // Disable room trigger collider after locking doors
+        DisableRoomCollider();
+    }
+
+
+    /// <summary>
+    /// Disable the room trigger collider that is used to trigger when the player enters a room
+    /// </summary>
+    public void DisableRoomCollider()
+    {
+        boxCollider2D.enabled = false;
+    }
 
 
     #region Validation

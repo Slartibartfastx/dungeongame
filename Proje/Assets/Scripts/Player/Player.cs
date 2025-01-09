@@ -65,6 +65,14 @@ public class Player : MonoBehaviour
         hp.setStartingHP(playerDetails.playerHealthAmount);
     }
 
+    /// <summary>
+    /// Returns the player position
+    /// </summary>
+    public Vector3 GetPlayerPosition()
+    {
+        return transform.position;
+    }
+
     private void CreatePlayerStartingWeps()
     {
         wepList.Clear();

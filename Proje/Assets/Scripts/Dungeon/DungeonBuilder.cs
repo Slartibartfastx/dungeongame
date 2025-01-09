@@ -583,6 +583,8 @@ public class DungeonBuilder : SingletonMonoBehaviour<DungeonBuilder>
         room.lowerBounds = roomTemplate.lowerBounds;
         room.upperBounds = roomTemplate.upperBounds;
         room.spawnPositionArray = roomTemplate.spawnPositionArray;
+        room.enemiesByLevelList = roomTemplate.enemiesByLevelList;
+        room.roomLevelEnemySpawnParametersList = roomTemplate.roomEnemySpawnParametersList;
         room.templateLowerBounds = roomTemplate.lowerBounds;
         room.templateUpperBounds = roomTemplate.upperBounds;
 
@@ -600,6 +602,12 @@ public class DungeonBuilder : SingletonMonoBehaviour<DungeonBuilder>
         else
         {
             room.parentRoomID = roomNode.parentRoomNodeIDList[0];
+        }
+
+        // If there are no enemies to spawn then default the room to be clear of enemies
+        if (room.GetNumberOfEnemiesToSpawn(GameManager.Instance.GetCurrentDungeonLevel()) == 0)
+        {
+            room.isClearedOfEnemies = true;
         }
         return room;
     }
@@ -645,6 +653,37 @@ public class DungeonBuilder : SingletonMonoBehaviour<DungeonBuilder>
 
         return newDoorwayList;
     }
+
+    /// <summary>
+    /// Get a room template by room template ID, returns null if ID doesn't exist
+    /// </summary>
+    public RoomTemplateSO GetRoomTemplate(string roomTemplateID)
+    {
+        if (roomTemplateDictionary.TryGetValue(roomTemplateID, out RoomTemplateSO roomTemplate))
+        {
+            return roomTemplate;
+        }
+        else
+        {
+            return null;
+        }
+    }
+
+    /// <summary>
+    /// Get room by roomID, if no room exists with that ID return null
+    /// </summary>
+    public Room GetRoomByRoomID(string roomID)
+    {
+        if (dungeonBuilderRoomDictionary.TryGetValue(roomID, out Room room))
+        {
+            return room;
+        }
+        else
+        {
+            return null;
+        }
+    }
+
 
     /// <summary>
     /// Clear dungeon room gameobjects and dungeon room dictionary

@@ -69,28 +69,25 @@ public class DoorScript : MonoBehaviour
     /// </summary>
     public void LockDoor()
     {
-        if (!isOpen) return;
-
         isOpen = false;
+        doorCollider.enabled = true;
+        doorTrigger.enabled = false;
 
-        UpdateDoorState(true);
-
-        // Play door close animation
+        // set open to false to close door
         animator.SetBool(Settings.open, false);
     }
-
     /// <summary>
     /// Unlock the door
     /// </summary>
     public void UnlockDoor()
     {
-        if (previouslyOpened)
+        doorCollider.enabled = false;
+        doorTrigger.enabled = true;
+
+        if (previouslyOpened == true)
         {
+            isOpen = false;
             OpenDoor();
-        }
-        else
-        {
-            UpdateDoorState(false);
         }
     }
 

@@ -68,6 +68,10 @@ PrefabInstance:
       propertyPath: m_Color.g
       value: 0.93725497
       objectReference: {fileID: 0}
+    - target: {fileID: 3936895632937169697, guid: daa6c8f8505728946ad510db5f60a77a, type: 3}
+      propertyPath: movementDetails
+      value: 
+      objectReference: {fileID: 11400000, guid: bb2deac09812ecd4fb0af4c85cf70b8c, type: 2}
     - target: {fileID: 5025877771445832636, guid: daa6c8f8505728946ad510db5f60a77a, type: 3}
       propertyPath: m_Name
       value: SkullFace_Green
@@ -80,6 +84,10 @@ PrefabInstance:
       propertyPath: m_Color.g
       value: 0.9372549
       objectReference: {fileID: 0}
+    - target: {fileID: 6258481359495771217, guid: daa6c8f8505728946ad510db5f60a77a, type: 3}
+      propertyPath: enemyDetails
+      value: 
+      objectReference: {fileID: 11400000, guid: e1afb707cb18c9f4e8b95631b8d224db, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

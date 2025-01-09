@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f324cf3f1bb6ce9489f925f6be5b5685, type: 3}
+  m_Name: MovementDetails_SlimeBlock
+  m_EditorClassIdentifier: 
+  minMovSpeed: 3
+  maxMovSpeed: 5
+  rollSpeed: 0
+  rollDistance: 0
+  rollCooldownTime: 0

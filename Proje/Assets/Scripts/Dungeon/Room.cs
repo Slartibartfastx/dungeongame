@@ -12,6 +12,8 @@ public class Room
     public Vector2Int templateLowerBounds;
     public Vector2Int templateUpperBounds;
     public Vector2Int[] spawnPositionArray;
+    public List<SpawnableObjectsByLevel<EnemyDetails>> enemiesByLevelList;
+    public List<RoomEnemySpawnParameters> roomLevelEnemySpawnParametersList;
     public List<string> childRoomIDList;
     public string parentRoomID;
     public List<Doorway> doorWayList;
@@ -27,4 +29,34 @@ public class Room
         doorWayList = new List<Doorway>();
     }
 
+    /// <summary>
+    /// Get the number of enemies to spawn for this room in this dungeon level
+    /// </summary>
+    public int GetNumberOfEnemiesToSpawn(DungeonLevelScriptableObject dungeonLevel)
+    {
+        foreach (RoomEnemySpawnParameters roomEnemySpawnParameters in roomLevelEnemySpawnParametersList)
+        {
+            if (roomEnemySpawnParameters.dungeonLevel == dungeonLevel)
+            {
+                return Random.Range(roomEnemySpawnParameters.minTotalEnemiesToSpawn, roomEnemySpawnParameters.maxTotalEnemiesToSpawn);
+            }
+        }
+
+        return 0;
+    }
+
+    /// <summary>
+    /// Get the room enemy spawn parameters for this dungeon level - if none found then return null
+    /// </summary>
+    public RoomEnemySpawnParameters GetRoomEnemySpawnParameters(DungeonLevelScriptableObject dungeonLevel)
+    {
+        foreach (RoomEnemySpawnParameters roomEnemySpawnParameters in roomLevelEnemySpawnParametersList)
+        {
+            if (roomEnemySpawnParameters.dungeonLevel == dungeonLevel)
+            {
+                return roomEnemySpawnParameters;
+            }
+        }
+        return null;
+    }
 }

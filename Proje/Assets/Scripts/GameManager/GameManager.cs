@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using static StaticEventHandler;
 
 [DisallowMultipleComponent]
 public class GameManager : SingletonMonoBehaviour<GameManager>
@@ -37,6 +38,7 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     private Player player;
 
     [HideInInspector] public GameState gameState;
+    [HideInInspector] public GameState previousGameState;
 
     [SerializeField] private GameResources gameResources;
 
@@ -76,6 +78,7 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     // Start is called before the first frame update
     private void Start()
     {
+        previousGameState = GameState.GameInitialization;
         gameState = GameState.GameInitialization;
 
         if (gameResources == null)
@@ -94,6 +97,43 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     {
         HandleGameState();
 
+
+    }
+
+    private void OnEnable()
+    {
+        // Subscribe to room changed event.
+        StaticEventHandler.OnRoomChanged += StaticEventHandler_OnRoomChanged;
+
+        // Subscribe to room enemies defeated event
+       // StaticEventHandler.OnRoomEnemiesDefeated += StaticEventHandler_OnRoomEnemiesDefeated;
+
+        // Subscribe to the points scored event
+        //StaticEventHandler.OnPointsScored += StaticEventHandler_OnPointsScored;
+
+        // Subscribe to score multiplier event
+       // StaticEventHandler.OnMultiplier += StaticEventHandler_OnMultiplier;
+
+        // Subscribe to player destroyed event
+       // player.destroyedEvent.OnDestroyed += Player_OnDestroyed;
+    }
+
+    private void OnDisable()
+    {
+        // Unsubscribe from room changed event
+        StaticEventHandler.OnRoomChanged -= StaticEventHandler_OnRoomChanged;
+
+        // Unsubscribe from room enemies defeated event
+      //  StaticEventHandler.OnRoomEnemiesDefeated -= StaticEventHandler_OnRoomEnemiesDefeated;
+
+        // Unsubscribe from the points scored event
+        //StaticEventHandler.OnPointsScored -= StaticEventHandler_OnPointsScored;
+
+        // Unsubscribe from score multiplier event
+       // StaticEventHandler.OnMultiplier -= StaticEventHandler_OnMultiplier;
+
+        // Unubscribe from player destroyed event
+        //player.destroyedEvent.OnDestroyed -= Player_OnDestroyed;
 
     }
 
@@ -142,11 +182,31 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     {
         return currentRoom;
     }
-    public void setRoom(Room room)
+ public void setRoom(Room room)
+{
+    previousRoom = currentRoom;
+    currentRoom = room;
+
+    Debug.Log($"Room changed: PreviousRoom={previousRoom?.templateID}, CurrentRoom={currentRoom?.templateID}");
+}
+
+    /// <summary>
+    /// Get the current dungeon level
+    /// </summary>
+    public DungeonLevelScriptableObject GetCurrentDungeonLevel()
     {
-        previousRoom = currentRoom;
-        currentRoom = room;
+        return dungeonLevelList[currentDungeonLevelListIndex];
     }
+
+    /// <summary>
+    /// Handle room changed event
+    /// </summary>
+    private void StaticEventHandler_OnRoomChanged(RoomChangedEventArgs roomChangedEventArgs)
+    {
+        setRoom(roomChangedEventArgs.room);
+    }
+
+
     #region Validation
 
 #if UNITY_EDITOR

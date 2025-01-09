@@ -106,7 +106,6 @@ public class AnimPlayer : MonoBehaviour
     /// </summary>
     private void SetAimWeaponAnimationParameters(AimDir aimDirection)
     {
-        Debug.Log(aimDirection);
         // Set aim direction
         switch (aimDirection)
         {

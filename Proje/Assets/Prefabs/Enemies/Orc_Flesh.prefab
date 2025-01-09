@@ -280,6 +280,14 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.40341562
       objectReference: {fileID: 0}
+    - target: {fileID: 6258481359495771217, guid: c6676f2ddea45a74c95364547229e667, type: 3}
+      propertyPath: enemyDetails
+      value: 
+      objectReference: {fileID: 11400000, guid: b5f94829abc808f42a20cba1bd00fbee, type: 2}
+    - target: {fileID: 7951648286075419975, guid: c6676f2ddea45a74c95364547229e667, type: 3}
+      propertyPath: movementDetails
+      value: 
+      objectReference: {fileID: 11400000, guid: df5d6120d9938b04e8ac16ebd302173f, type: 2}
     - target: {fileID: 9069974104796262772, guid: c6676f2ddea45a74c95364547229e667, type: 3}
       propertyPath: m_Controller
       value: 

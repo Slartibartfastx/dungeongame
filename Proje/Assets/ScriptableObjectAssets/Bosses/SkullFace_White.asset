@@ -15,10 +15,10 @@ MonoBehaviour:
   enemyName: SkullFace White
   enemyPrefab: {fileID: 4656142035290357507, guid: 49e9d79da46860344908a0f631cf9e8f, type: 3}
   chaseDistance: 50
-  enemyStandardMaterial: {fileID: 0}
-  enemyMaterializeTime: 0
-  enemyMaterializeShader: {fileID: 0}
-  enemyMaterializeColor: {r: 0, g: 0, b: 0, a: 0}
+  enemyStandardMaterial: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  enemyMaterializeTime: 2
+  enemyMaterializeShader: {fileID: -6465566751694194690, guid: 5fec8f8e6ea244648a3c6ede24a56288, type: 3}
+  enemyMaterializeColor: {r: 0, g: 0.0055697914, b: 0.3584906, a: 0}
   firingIntervalMin: 0.1
   firingIntervalMax: 1
   firingDurationMin: 1

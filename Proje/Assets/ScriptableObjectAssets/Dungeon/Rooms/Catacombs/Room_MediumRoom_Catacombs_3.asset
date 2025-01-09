@@ -59,3 +59,22 @@ MonoBehaviour:
   - {x: 9, y: 5}
   - {x: 21, y: 5}
   - {x: 44, y: 6}
+  enemiesByLevelList:
+  - dungeonLevel: {fileID: 11400000, guid: b0ab998fae116c94cbee40ea1290ec34, type: 2}
+    spawnableObjectRatioList:
+    - dungeonObject: {fileID: 11400000, guid: 156a9375aa66cc340b06382194718392, type: 2}
+      ratio: 5
+    - dungeonObject: {fileID: 11400000, guid: 1487daea790fd4345b5589760e8cf93d, type: 2}
+      ratio: 5
+    - dungeonObject: {fileID: 11400000, guid: 6fe783422e5589343b4ba05979bc1ec8, type: 2}
+      ratio: 5
+    - dungeonObject: {fileID: 11400000, guid: 5fa54838495c0894ba45e23c9a145245, type: 2}
+      ratio: 5
+  roomEnemySpawnParametersList:
+  - dungeonLevel: {fileID: 11400000, guid: b0ab998fae116c94cbee40ea1290ec34, type: 2}
+    minTotalEnemiesToSpawn: 6
+    maxTotalEnemiesToSpawn: 8
+    minConcurrentEnemies: 3
+    maxConcurrentEnemies: 5
+    minSpawnInterval: 4
+    maxSpawnInterval: 6
