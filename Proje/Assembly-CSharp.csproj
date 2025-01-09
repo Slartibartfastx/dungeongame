@@ -71,6 +71,7 @@
     <Compile Include="Assets\Scripts\Utilities\HelperUtilities.cs" />
     <Compile Include="Assets\Scripts\Weapons\WeaponScripts\AimWeapon.cs" />
     <Compile Include="Assets\Scripts\Dungeon\RoomEnemySpawnParameters.cs" />
+    <Compile Include="Assets\Scripts\Health\HealthEvent.cs" />
     <Compile Include="Assets\Scripts\Dungeon\DungeonBuilder.cs" />
     <Compile Include="Assets\Scripts\Effects\MaterializeEffect.cs" />
     <Compile Include="Assets\Scripts\Enums\Enums.cs" />
@@ -88,6 +89,7 @@
     <Compile Include="Assets\Scripts\Movements\MovementByVelocity.cs" />
     <Compile Include="Assets\Scripts\Weapons\WeaponScripts\WeaponDetails.cs" />
     <Compile Include="Assets\Scripts\Dungeon\Doorway.cs" />
+    <Compile Include="Assets\Scripts\Health\DestroyedEvent.cs" />
     <Compile Include="Assets\Scripts\Astar\AStarNode.cs" />
     <Compile Include="Assets\Scripts\Movements\MovementToPosition.cs" />
     <Compile Include="Assets\Scripts\Weapons\WeaponScripts\AimWeaponEvent.cs" />
@@ -104,8 +106,10 @@
     <Compile Include="Assets\Scripts\Astar\AStarGridNodes.cs" />
     <Compile Include="Assets\Scripts\Dungeon\DungeonLevelScriptableObject.cs" />
     <Compile Include="Assets\Scripts\Dungeon\DoorScript.cs" />
+    <Compile Include="Assets\Scripts\Health\Destroyed.cs" />
     <Compile Include="Assets\Scripts\Utilities\SpawnableObjectsByLevel.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyDetails.cs" />
+    <Compile Include="Assets\Scripts\Enemy\EnemyHealthDetails.cs" />
     <Compile Include="Assets\Scripts\Weapons\WeaponScripts\Weapon.cs" />
     <Compile Include="Assets\Scripts\PoolManager\PoolManager.cs" />
     <Compile Include="Assets\Scripts\Movements\IdleEvent.cs" />

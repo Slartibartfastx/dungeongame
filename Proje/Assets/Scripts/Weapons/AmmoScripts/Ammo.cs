@@ -61,32 +61,32 @@ public class Ammo : MonoBehaviour, IFireable
     {
         if (isColliding) return;
 
-        //DealDamage(collision);
+        DealDamage(collision);
         //ShowHitEffect();
         Disable();
     }
 
-   /* private void DealDamage(Collider2D collision)
+    private void DealDamage(Collider2D collision)
     {
         Health health = collision.GetComponent<Health>();
-        bool enemyHit = false;
+        //bool enemyHit = false;
 
         if (health != null)
         {
-            isColliding = true;
+            //isColliding = true;
             health.TakeDamage(details.damage);
 
-            if (health.enemy != null)
+           /* if (health.enemy != null)
             {
                 enemyHit = true;
-            }
+            }*/
         }
 
-        if (details.isPlayerProjectile)
+      /* if (details.isPlayerProjectile)
         {
             StaticEventHandler.CallMultiplierEvent(enemyHit);
-        }
-    }*/
+        }*/
+    }
 
     public void InitialiseAmmo(AmmoDetails ammoDetails, float aimAngle, float weaponAimAngle, float ammoSpeed, Vector3 weaponAimDirection, bool overrideMovement = false)
     {
