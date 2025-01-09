@@ -9,24 +9,25 @@ using System.Linq;
 // Fluent metotlar için eklenti sınıfı
 public static class GUIStyleExtensions
 {
+    // GUIStyle arka planını ayarlayan eklenti metodu
     public static GUIStyle WithBackground(this GUIStyle style, Texture2D texture)
     {
         style.normal.background = texture;
         return style;
     }
-
+    // GUIStyle metin rengini ayarlayan eklenti metodu
     public static GUIStyle WithTextColor(this GUIStyle style, Color color)
     {
         style.normal.textColor = color;
         return style;
     }
-
+    // GUIStyle padding değerini ayarlayan eklenti metodu
     public static GUIStyle WithPadding(this GUIStyle style, int padding)
     {
         style.padding = new RectOffset(padding, padding, padding, padding);
         return style;
     }
-
+    // GUIStyle border değerini ayarlayan eklenti metodu
     public static GUIStyle WithBorder(this GUIStyle style, int border)
     {
         style.border = new RectOffset(border, border, border, border);
@@ -37,34 +38,35 @@ public static class GUIStyleExtensions
 
 public class RoomNodeGraphEditor : EditorWindow
 {
-    private GUIStyle roomNodeStyle;
-    private GUIStyle roomNodeSelectedStyle;
-    private static NodeGraphObject currentNodeGraph;
+    private GUIStyle roomNodeStyle;// Oda düğümü için GUI stili
+    private GUIStyle roomNodeSelectedStyle;// Seçili oda düğümü için GUI stili
+    private static NodeGraphObject currentNodeGraph;// Şu an düzenlenen düğüm grafiği
 
 
-    private Vector2 graphOffset;
-    private Vector2 graphDrag;
+    private Vector2 graphOffset; // Grafik ofseti (kaydırma pozisyonu)
+    private Vector2 graphDrag;// Grafik sürükleme değeri
 
 
-    private NodeScriptableObject currentNode = null;
-    private NodeTypeListScriptableObject nodeTypeList;
-    private const float nodeW = 200f;
-    private const float nodeH = 100f;
-    private const int nodeP = 25;
-    private const int nodeB = 12;
+    private NodeScriptableObject currentNode = null; // Şu an üzerinde işlem yapılan düğüm
+    private NodeTypeListScriptableObject nodeTypeList;// Düğüm tiplerini içeren liste
+    private const float nodeW = 200f; // Düğüm genişliği
+    private const float nodeH = 100f;// Düğüm yüksekliği
+    private const int nodeP = 25;// Düğüm padding değeri
+    private const int nodeB = 12; // Düğüm border değeri
 
 
-    private const float connectingLineWidth = 3f;
+    private const float connectingLineWidth = 3f;// Bağlantı çizgisi kalınlığı
 
 
-    private const float connectingLineArrowSize = 6f;
+    private const float connectingLineArrowSize = 6f;// Bağlantı ok ucu boyutu
+
 
 
     // Grid Spacing
     private const float gridLarge = 100f;
     private const float gridSmall = 25f;
 
-
+    // Menüye Dungeon Room Node Graph Editor seçeneğini ekler
     [MenuItem("Dungeon Room Node Graph Editor", menuItem = "Window/Dungeon Editor/Dungeon Room Node Graph Editor")]
     private static void OpenWindow()
     {
@@ -73,9 +75,10 @@ public class RoomNodeGraphEditor : EditorWindow
 
     private void OnEnable()
     {
-        // Subscribe to the inspector selection changed event
+        // Seçim değiştiğinde çağrılacak metodu bağlar
         Selection.selectionChanged += InspectorSelectionChanged;
 
+        // Oda düğümü stili ayarları
         roomNodeStyle = new GUIStyle()
             .WithBackground(EditorGUIUtility.Load("node1") as Texture2D)
             .WithTextColor(Color.black)
@@ -88,17 +91,17 @@ public class RoomNodeGraphEditor : EditorWindow
        .WithPadding(nodeP)
        .WithBorder(nodeB);
 
-        // Load Room node types
+        // Oda düğümü türlerini yükler
         nodeTypeList = GameResources.Instance.roomNodeTypeList;
     }
 
     private void OnDisable()
     {
-        // Unsubscribe from the inspector selection changed event
+        // Seçim değişikliğine abone olmayı bırakır
         Selection.selectionChanged -= InspectorSelectionChanged;
     }
 
-
+    // Çift tıklama ile grafiği açar
     [OnOpenAsset(0)]  // Need the namespace UnityEditor.Callbacks
     public static bool OnDoubleClickAsset(int instanceID, int line)
     {
@@ -121,18 +124,19 @@ public class RoomNodeGraphEditor : EditorWindow
 
         if (currentNodeGraph != null)
         {
-            // Draw Grid
+            // Arka plan ızgarasını çizer
             DrawBackgroundGrid(gridSmall, 0.2f, Color.gray);
             DrawBackgroundGrid(gridLarge, 0.3f, Color.gray);
 
-
+            // Sürüklenen çizgiyi çizer
             DrawDraggedLine();
 
-
+            // Olayları işler
             ProcessEvents(Event.current);
-
+            // Bağlantıları çizer
             DrawConnections();
 
+            // Düğümleri çizer
             DrawNodes();
         }
 
@@ -143,35 +147,35 @@ public class RoomNodeGraphEditor : EditorWindow
     }
 
     /// <summary>
-    /// Draw a background grid for the room node graph editor
+    /// Oda düğüm grafiği için arka plan ızgarası çizer
     /// </summary>
     private void DrawBackgroundGrid(float gridSize, float gridOpacity, Color gridColor)
     {
-        // Calculate the number of lines required for the grid
+       
         int verticalLineCount = Mathf.CeilToInt((position.width + gridSize) / gridSize);
         int horizontalLineCount = Mathf.CeilToInt((position.height + gridSize) / gridSize);
 
-        // Set the grid line color and opacity
+        
         Handles.color = new Color(gridColor.r, gridColor.g, gridColor.b, gridOpacity);
 
-        // Adjust the offset based on drag
+       
         graphOffset += graphDrag * 0.5f;
 
-        // Determine the offset of the grid to align it properly
+        
         Vector3 gridOffset = new Vector3(graphOffset.x % gridSize, graphOffset.y % gridSize, 0);
 
-        // Draw the vertical grid lines
+        
         DrawGridLines(verticalLineCount, gridSize, gridOffset, true);
 
-        // Draw the horizontal grid lines
+        
         DrawGridLines(horizontalLineCount, gridSize, gridOffset, false);
 
-        // Reset the color to default
+       
         Handles.color = Color.white;
     }
 
     /// <summary>
-    /// Helper method to draw grid lines either vertically or horizontally
+    /// Izgara çizgilerini çizer (dikey veya yatay)
     /// </summary>
     private void DrawGridLines(int lineCount, float gridSize, Vector3 offset, bool isVertical)
     {
@@ -191,9 +195,8 @@ public class RoomNodeGraphEditor : EditorWindow
     }
 
 
-
     /// <summary>
-    /// Draw connections in the graph window between room nodes
+    /// Oda düğümleri arasındaki bağlantıları çizer
     /// </summary>
     private void DrawConnections()
     {
@@ -208,73 +211,78 @@ public class RoomNodeGraphEditor : EditorWindow
     }
 
 
+    /// <summary>
+    /// İki düğüm arasında bir bağlantı çizgisi çizer
+    /// </summary>
     private void DrawConnectionLine(NodeScriptableObject parentRoomNode, NodeScriptableObject childRoomNode)
     {
-        // Get line start and end positions
+        
         Vector2 startPosition = parentRoomNode.rect.center;
         Vector2 endPosition = childRoomNode.rect.center;
 
-        // Calculate the midpoint of the line
+       
         Vector2 midPoint = (startPosition + endPosition) / 2f;
 
-        // Calculate direction and perpendicular vector
+       
         Vector2 direction = (endPosition - startPosition).normalized;
         Vector2 perpendicular = new Vector2(-direction.y, direction.x);
 
-        // Define arrowhead size
+       
         float arrowSize = 10f;
 
-        // Calculate arrowhead points at the midpoint
+        
         Vector2 arrowTip = midPoint;
         Vector2 arrowBase1 = midPoint - direction * arrowSize + perpendicular * (arrowSize / 2f);
         Vector2 arrowBase2 = midPoint - direction * arrowSize - perpendicular * (arrowSize / 2f);
 
-        // Draw the main line
+        
         Handles.DrawBezier(startPosition, endPosition, startPosition, endPosition, Color.white, null, connectingLineWidth);
 
-        // Draw the arrowhead at the midpoint
+        
         Handles.DrawAAPolyLine(connectingLineWidth, arrowTip, arrowBase1);
         Handles.DrawAAPolyLine(connectingLineWidth, arrowTip, arrowBase2);
 
-        // Optionally fill the arrowhead for a solid appearance
+        
         Handles.color = Color.white;
         Handles.DrawAAConvexPolygon(arrowTip, arrowBase1, arrowBase2);
 
-        // Mark GUI as changed
+        
         GUI.changed = true;
     }
+
+    /// <summary>
+    /// Sürüklenen çizgiyi çizer
+    /// </summary>
     private void DrawDraggedLine()
     {
         if (currentNodeGraph.linePosition != Vector2.zero)
         {
-            // Get the start and end positions of the line
+           
             Vector2 startPosition = currentNodeGraph.roomNodeToDrawLineFrom.rect.center;
             Vector2 endPosition = currentNodeGraph.linePosition;
 
-            // Draw the main line
+           
             Handles.DrawBezier(startPosition, endPosition, startPosition, endPosition, Color.white, null, connectingLineWidth);
 
-            // Calculate the direction and perpendicular vector for the arrow
+       
             Vector2 direction = (endPosition - startPosition).normalized;
             Vector2 perpendicular = new Vector2(-direction.y, direction.x);
 
-            // Define arrowhead size
             float arrowSize = 10f;
 
-            // Calculate arrowhead points at the end position
+       
             Vector2 arrowTip = endPosition;
             Vector2 arrowBase1 = endPosition - direction * arrowSize + perpendicular * (arrowSize / 2f);
             Vector2 arrowBase2 = endPosition - direction * arrowSize - perpendicular * (arrowSize / 2f);
 
-            // Draw the arrowhead at the end position
+  
             Handles.DrawAAPolyLine(connectingLineWidth, arrowTip, arrowBase1);
             Handles.DrawAAPolyLine(connectingLineWidth, arrowTip, arrowBase2);
 
-            // Optionally fill the arrowhead for a solid appearance
             Handles.color = Color.white;
             Handles.DrawAAConvexPolygon(arrowTip, arrowBase1, arrowBase2);
 
-            // Mark GUI as changed
+    
             GUI.changed = true;
         }
     }
@@ -328,9 +336,6 @@ public class RoomNodeGraphEditor : EditorWindow
         }
     }
 
-    /// <summary>
-    /// Process mouse down events on the room node graph (not over a node)
-    /// </summary>
     private void ProcessMouseDownEvent(Event currentEvent)
     {
         // Process right click mouse down on graph event (show context menu)
@@ -346,9 +351,6 @@ public class RoomNodeGraphEditor : EditorWindow
         }
     }
 
-    /// <summary>
-    /// Clear selection from all room nodes
-    /// </summary>
     private void ClearAllSelectedRoomNodes()
     {
         foreach (NodeScriptableObject roomNode in currentNodeGraph.nodeList)
@@ -362,9 +364,6 @@ public class RoomNodeGraphEditor : EditorWindow
         }
     }
 
-    /// <summary>
-    /// Select all room nodes
-    /// </summary>
     private void SelectAllRoomNodes()
     {
         foreach (NodeScriptableObject roomNode in currentNodeGraph.nodeList)
@@ -387,43 +386,39 @@ public class RoomNodeGraphEditor : EditorWindow
 
         menu.ShowAsContext();
     }
-
-    /// <summary>
-    /// Create a room node at the mouse position
-    /// </summary>
     private void CreateNode(object mousePositionObject)
     {
-        // Assuming mousePositionObject is a Vector2, cast it to Vector2
+        // mousePositionObject'in bir Vector2 olduğunu varsayarak, bunu Vector2'ye dönüştür
         Vector2 mousePosition = (Vector2)mousePositionObject;
 
-        // If there are no nodes in the current graph, create an entrance room node first
+        // Eğer mevcut grafikte hiç düğüm yoksa, ilk olarak bir giriş odası düğümü oluştur
         if (currentNodeGraph.nodeList.Count == 0)
         {
             CreateNode(mousePosition, nodeTypeList.list.Find(x => x.roomType == RoomType.Entrance));
         }
         else
         {
-            // If there is already an entrance, create a regular room node (e.g., Corridor)
-            CreateNode(mousePosition, nodeTypeList.list.Find(x => x.roomType == RoomType.None)); // Change to desired default room type
+            // Eğer zaten bir giriş odası varsa, sıradan bir oda düğümü oluştur (örneğin, Koridor)
+            CreateNode(mousePosition, nodeTypeList.list.Find(x => x.roomType == RoomType.None)); // Varsayılan oda türünü burada değiştirebilirsiniz
         }
     }
     /// <summary>
-    /// Create a room node at the mouse position - overloaded to also pass in RoomNodeType
+    /// Fare pozisyonunda bir oda düğümü oluşturur - ayrıca RoomNodeType geçmek için aşırı yüklenmiş bir yöntem
     /// </summary>
     private void CreateNode(object mousePositionObject, NodeTypeScriptableObject roomNodeType)
     {
         Vector2 mousePosition = (Vector2)mousePositionObject;
 
-        // create room node scriptable object asset
+    
         NodeScriptableObject roomNode = ScriptableObject.CreateInstance<NodeScriptableObject>();
 
-        // add room node to current room node graph room node list
+        
         currentNodeGraph.nodeList.Add(roomNode);
 
-        // set room node values
+     
         roomNode.Initialise(new Rect(mousePosition, new Vector2(nodeW, nodeH)), currentNodeGraph, roomNodeType);
 
-        // add room node to room node graph scriptable object asset database
+      
         AssetDatabase.AddObjectToAsset(roomNode, currentNodeGraph);
 
         AssetDatabase.SaveAssets();
@@ -433,56 +428,56 @@ public class RoomNodeGraphEditor : EditorWindow
 
 
     /// <summary>
-    /// Delete selected room nodes
+    /// Seçilen oda düğümlerini sil
     /// </summary>
     private void DeleteSelectedRoomNodes()
     {
-        // Filter nodes that are selected and not of type Entrance
+        // Seçili olan ve türü "Giriş" olmayan düğümleri filtrele
         var selectedNodes = currentNodeGraph.nodeList
             .Where(roomNode => roomNode.isSelected && roomNode.roomNodeType.roomType != NodeTypeScriptableObject.RoomType.Entrance)
             .ToList();
 
-        // Process each selected room node
+        // Her bir seçili oda düğümünü işle
         foreach (NodeScriptableObject roomNode in selectedNodes)
         {
-            // Handle child nodes
+            // Çocuk düğümleri işle
             foreach (string childRoomNodeID in roomNode.childRoomNodeIDList)
             {
                 NodeScriptableObject childRoomNode = currentNodeGraph.GetRoomNode(childRoomNodeID);
                 childRoomNode?.RemoveParentRoomNodeIDFromRoomNode(roomNode.id);
             }
 
-            // Handle parent nodes
+            // Ebeveyn düğümleri işle
             foreach (string parentRoomNodeID in roomNode.parentRoomNodeIDList)
             {
                 NodeScriptableObject parentRoomNode = currentNodeGraph.GetRoomNode(parentRoomNodeID);
                 parentRoomNode?.RemoveChildRoomNodeIDFromRoomNode(roomNode.id);
             }
 
-            // Delete the room node
+            // Oda düğümünü sil
             currentNodeGraph.roomNodeDictionary.Remove(roomNode.id);
             currentNodeGraph.nodeList.Remove(roomNode);
-            DestroyImmediate(roomNode, true); // Remove from Asset database
+            DestroyImmediate(roomNode, true); // Varlık veri tabanından kaldır
         }
 
-        // Save assets after deletion
+        // Silme işleminden sonra varlıkları kaydet
         AssetDatabase.SaveAssets();
     }
 
     /// <summary>
-    /// Delete the links between the selected room nodes
+    /// Seçilen oda düğümleri arasındaki bağlantıları sil
     /// </summary>
     private void DeleteSelectedRoomNodeLinks()
     {
-        // Find all selected nodes that have child nodes
+       
         var selectedNodesWithChildren = currentNodeGraph.nodeList
             .Where(roomNode => roomNode.isSelected && roomNode.childRoomNodeIDList.Any())
             .ToList();
 
-        // Remove links between selected nodes and their selected children
+       
         foreach (NodeScriptableObject roomNode in selectedNodesWithChildren)
         {
-            foreach (string childRoomNodeID in roomNode.childRoomNodeIDList.ToList()) // Create a copy to avoid modification during iteration
+            foreach (string childRoomNodeID in roomNode.childRoomNodeIDList.ToList()) 
             {
                 NodeScriptableObject childRoomNode = currentNodeGraph.GetRoomNode(childRoomNodeID);
 
@@ -494,14 +489,13 @@ public class RoomNodeGraphEditor : EditorWindow
             }
         }
 
-        // Clear all selected room nodes
+        
         ClearAllSelectedRoomNodes();
     }
 
 
     /// <summary>
-    /// <summary>
-    /// Process mouse up events
+    /// Fare yukarı olaylarını işleyin
     /// </summary>
     private void ProcessMouseUpEvent(Event currentEvent)
     {
@@ -531,7 +525,7 @@ public class RoomNodeGraphEditor : EditorWindow
 
 
     /// <summary>
-    /// Reset the line dragging state for the current room node
+    /// Mevcut oda düğümü için çizgi sürükleme durumunu sıfırla
     /// </summary>
     private void ClearLineDrag()
     {
@@ -550,7 +544,7 @@ public class RoomNodeGraphEditor : EditorWindow
     }
 
     /// <summary>
-    /// Process mouse drag event
+    /// Fare sürükleme olayını işleyin
     /// </summary>
     private void ProcessMouseDragEvent(Event currentEvent)
     {
@@ -566,9 +560,8 @@ public class RoomNodeGraphEditor : EditorWindow
         }
     }
 
-
     /// <summary>
-    /// Process right mouse drag event - handles drawing a connecting line
+    /// Sağ tıklama sürükleme olayını işleyin - bağlantı çizgisi çizmeyi ele alın
     /// </summary>
     private void ProcessRightMouseDragEvent(Event currentEvent)
     {
@@ -582,7 +575,7 @@ public class RoomNodeGraphEditor : EditorWindow
     }
 
     /// <summary>
-    /// Process left mouse drag event - drag room node graph
+    /// Sol tıklama sürükleme olayını işleyin - oda düğüm grafiğini sürükleyin
     /// </summary>
     private void ProcessLeftMouseDragEvent(Vector2 dragDelta)
     {
@@ -599,8 +592,9 @@ public class RoomNodeGraphEditor : EditorWindow
     }
 
 
+
     /// <summary>
-    /// Draw room nodes in the graph window
+    /// Grafikte oda düğümlerini çizin
     /// </summary>
     private void DrawNodes()
     {
@@ -621,10 +615,10 @@ public class RoomNodeGraphEditor : EditorWindow
         GUI.changed = true;
     }
 
-/// <summary>
-/// Handles selection change in the inspector
-/// </summary>
-private void InspectorSelectionChanged()
+    /// <summary>
+    /// Inspector'daki seçim değişikliğini ele alın
+    /// </summary>
+    private void InspectorSelectionChanged()
 {
     if (Selection.activeObject is NodeGraphObject roomNodeGraph)
     {

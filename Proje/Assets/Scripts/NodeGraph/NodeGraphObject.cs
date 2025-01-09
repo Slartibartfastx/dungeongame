@@ -37,7 +37,6 @@ public NodeScriptableObject GetRoomNode(string roomNodeID)
 
     public NodeScriptableObject GetRoomNode(RoomType roomType)
     {
-        // Assuming that 'roomNodeType' is a property of type 'NodeTypeScriptableObject' that holds the enum
         var node = nodeList.FirstOrDefault(x => x.roomNodeType.roomType == roomType);
 
         if (node != null)
@@ -53,7 +52,7 @@ public NodeScriptableObject GetRoomNode(string roomNodeID)
     {
         return parentRoomNode.childRoomNodeIDList
             .Select(childNodeID => GetRoomNode(childNodeID))
-            .Where(childNode => childNode != null); // Ensure no nulls are returned
+            .Where(childNode => childNode != null); 
     }
 
 
