@@ -8,6 +8,28 @@ public static class HelperUtilities
 {
     public static Camera mainCam;
 
+
+    /// <summary>
+    /// Get the mouse world position.
+    /// </summary>
+    public static Vector3 GetMouseWorldPosition()
+    {
+        if (mainCam == null) mainCam = Camera.main;
+
+        Vector3 mouseScreenPosition = Input.mousePosition;
+
+        // Clamp mouse position to screen size
+        mouseScreenPosition.x = Mathf.Clamp(mouseScreenPosition.x, 0f, Screen.width);
+        mouseScreenPosition.y = Mathf.Clamp(mouseScreenPosition.y, 0f, Screen.height);
+
+        Vector3 worldPosition = mainCam.ScreenToWorldPoint(mouseScreenPosition);
+
+        worldPosition.z = 0f;
+
+        return worldPosition;
+
+    }
+
     public static Vector3 getMousePos()
     {
         if (mainCam == null) { mainCam = Camera.main; }
