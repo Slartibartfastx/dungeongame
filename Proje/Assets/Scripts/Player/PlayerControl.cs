@@ -158,6 +158,8 @@ public class PlayerControl : MonoBehaviour
 
         AimWepInput(out wepDir, out wepAngDeg, out playerAngDeg, out playerAimDir);
 
+        // Fire weapon input
+        FireWeaponInput(wepDir, wepAngDeg, playerAngDeg, playerAimDir);
 
     }
 

@@ -8,8 +8,8 @@ public class WeaponDetails : ScriptableObject
     [Header("WEAPON BASE DETAILS")]
     #endregion Header WEAPON BASE DETAILS
 
-    public string weaponTitle;
-    public Sprite weaponIcon;
+    public string weaponTitle; //Weapon Name
+    public Sprite weaponIcon;  //Weapon Sprite
 
     #region Header WEAPON CONFIGURATION
     [Space(10)]
@@ -41,7 +41,7 @@ public class WeaponDetails : ScriptableObject
     private void OnValidate()
     {
         HelperUtilities.ValidateCheckEmptyString(this, nameof(weaponTitle), weaponTitle);
-        //HelperUtilities.ValidateCheckNullValue(this, nameof(currentAmmo), currentAmmo);
+        HelperUtilities.ValidateCheckNullValue(this, nameof(currentAmmo), currentAmmo);
         HelperUtilities.ValidateCheckPositiveValue(this, nameof(fireRate), fireRate, false);
         HelperUtilities.ValidateCheckPositiveValue(this, nameof(prechargeTime), prechargeTime, true);
 

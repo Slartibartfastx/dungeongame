@@ -49,7 +49,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trailEffect: {fileID: 7538281962657005555}
-  details: {fileID: 11400000, guid: d9c48880172da674ea1e9884604c26c6, type: 2}
 --- !u!212 &6365732652926584230
 SpriteRenderer:
   m_ObjectHideFlags: 0

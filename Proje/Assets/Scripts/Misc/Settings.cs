@@ -64,6 +64,6 @@ public static class Settings
     #endregion
 
     #region FIRING CONTROL
-    public const float useAimAngleDistance = 4f; // hedef mesafesi bu degerden dusukse aim Angle(karakterden hesaplaniyor) kullanilacak, yüksekse weapon Aim Angle kullanilacak
+    public const float useAimAngleDistance = 3.5f; // hedef mesafesi bu degerden dusukse aim Angle(karakterden hesaplaniyor) kullanilacak, yüksekse weapon Aim Angle kullanilacak
     #endregion
 }

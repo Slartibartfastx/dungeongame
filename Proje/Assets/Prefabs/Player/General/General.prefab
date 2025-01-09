@@ -12,14 +12,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: WeaponShootPosition
       objectReference: {fileID: 0}
-    - target: {fileID: 1500957197404765995, guid: 29635587ecfd22348bfe62fe08a6d7ff, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.111
-      objectReference: {fileID: 0}
-    - target: {fileID: 1500957197404765995, guid: 29635587ecfd22348bfe62fe08a6d7ff, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.272
-      objectReference: {fileID: 0}
     - target: {fileID: 1968797798982946084, guid: 29635587ecfd22348bfe62fe08a6d7ff, type: 3}
       propertyPath: m_Controller
       value: 
@@ -59,14 +51,6 @@ PrefabInstance:
     - target: {fileID: 4945857541788935623, guid: 29635587ecfd22348bfe62fe08a6d7ff, type: 3}
       propertyPath: m_SpriteTilingProperty.adaptiveTilingThreshold
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6208274973441568918, guid: 29635587ecfd22348bfe62fe08a6d7ff, type: 3}
-      propertyPath: m_Size.x
-      value: 1.125
-      objectReference: {fileID: 0}
-    - target: {fileID: 6208274973441568918, guid: 29635587ecfd22348bfe62fe08a6d7ff, type: 3}
-      propertyPath: m_Size.y
-      value: 0.6875
       objectReference: {fileID: 0}
     - target: {fileID: 6208274973441568918, guid: 29635587ecfd22348bfe62fe08a6d7ff, type: 3}
       propertyPath: m_Sprite

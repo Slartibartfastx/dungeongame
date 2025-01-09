@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponTitle: Pistol
   weaponIcon: {fileID: 21300000, guid: abbe40c4d6a803f42a7c4f53404a484d, type: 3}
-  shootPositionOffset: {x: 1.2, y: 0.28, z: 0}
+  shootPositionOffset: {x: 1.115, y: 0.277, z: 0}
   currentAmmo: {fileID: 11400000, guid: d9c48880172da674ea1e9884604c26c6, type: 2}
   infiniteAmmo: 1
-  infiniteClip: 1
+  infiniteClip: 0
   clipCapacity: 10
   maxAmmo: 0
   fireRate: 0.25
