@@ -3,7 +3,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(ActiveWeapon))]
 [RequireComponent(typeof(FireWeaponEvent))]
-//[RequireComponent(typeof(ReloadWeaponEvent))]
+[RequireComponent(typeof(ReloadWeaponEvent))]
 [RequireComponent(typeof(WeaponFiredEvent))]
 [DisallowMultipleComponent]
 public class FireWeapon : MonoBehaviour
@@ -12,7 +12,7 @@ public class FireWeapon : MonoBehaviour
     private float fireRateCoolDownTimer = 0f;
     private ActiveWeapon activeWeapon;
     private FireWeaponEvent fireWeaponEvent;
-    //private ReloadWeaponEvent reloadWeaponEvent;
+    private ReloadWeaponEvent reloadWeaponEvent;
     private WeaponFiredEvent weaponFiredEvent;
 
     private void Awake()
@@ -20,7 +20,7 @@ public class FireWeapon : MonoBehaviour
         // Load components.
         activeWeapon = GetComponent<ActiveWeapon>();
         fireWeaponEvent = GetComponent<FireWeaponEvent>();
-        //reloadWeaponEvent = GetComponent<ReloadWeaponEvent>();
+        reloadWeaponEvent = GetComponent<ReloadWeaponEvent>();
         weaponFiredEvent = GetComponent<WeaponFiredEvent>();
     }
 
@@ -111,7 +111,7 @@ public class FireWeapon : MonoBehaviour
         if (!activeWeapon.GetCurrentWeapon().wepDetails.infiniteClip && activeWeapon.GetCurrentWeapon().wepClipRemainingAmmo <= 0)
         {
             // trigger a reload weapon event.
-            //reloadWeaponEvent.CallReloadWeaponEvent(activeWeapon.GetCurrentWeapon(), 0);
+            reloadWeaponEvent.CallReloadWeaponEvent(activeWeapon.GetCurrentWeapon(), 0);
 
             return false;
         }

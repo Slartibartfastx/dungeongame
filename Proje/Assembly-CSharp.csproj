@@ -63,6 +63,7 @@
     <Compile Include="Assets\Scripts\Misc\ScreenCursor.cs" />
     <Compile Include="Assets\Scripts\NodeGraph\NodeTypeListScriptableObject.cs" />
     <Compile Include="Assets\Scripts\GameManager\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Weapons\WeaponScripts\WeaponReloadedEvent.cs" />
     <Compile Include="Assets\Scripts\Weapons\WeaponScripts\ActiveWeapon.cs" />
     <Compile Include="Assets\Scripts\Weapons\WeaponScripts\FireWeapon.cs" />
     <Compile Include="Assets\Scripts\Weapons\WeaponScripts\FireWeaponEvent.cs" />
@@ -75,6 +76,7 @@
     <Compile Include="Assets\Scripts\Dungeon\DungeonBuilder.cs" />
     <Compile Include="Assets\Scripts\Effects\MaterializeEffect.cs" />
     <Compile Include="Assets\Scripts\Enums\Enums.cs" />
+    <Compile Include="Assets\Scripts\Weapons\WeaponScripts\ReloadWeaponEvent.cs" />
     <Compile Include="Assets\Scripts\Dungeon\DoorLighting.cs" />
     <Compile Include="Assets\Scripts\Enemy\Enemy.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerDetails.cs" />
@@ -103,6 +105,7 @@
     <Compile Include="Assets\Scripts\Health\Health.cs" />
     <Compile Include="Assets\Scripts\Movements\MovementDetails.cs" />
     <Compile Include="Assets\Scripts\Weapons\AmmoScripts\IFireable.cs" />
+    <Compile Include="Assets\Scripts\Weapons\WeaponScripts\ReloadWeapon.cs" />
     <Compile Include="Assets\Scripts\Astar\AStarGridNodes.cs" />
     <Compile Include="Assets\Scripts\Dungeon\DungeonLevelScriptableObject.cs" />
     <Compile Include="Assets\Scripts\Dungeon\DoorScript.cs" />

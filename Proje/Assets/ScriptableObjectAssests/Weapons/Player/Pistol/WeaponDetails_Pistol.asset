@@ -17,7 +17,7 @@ MonoBehaviour:
   shootPositionOffset: {x: 1.115, y: 0.277, z: 0}
   currentAmmo: {fileID: 11400000, guid: d9c48880172da674ea1e9884604c26c6, type: 2}
   infiniteAmmo: 1
-  infiniteClip: 1
+  infiniteClip: 0
   clipCapacity: 10
   maxAmmo: 0
   fireRate: 0.25

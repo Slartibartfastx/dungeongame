@@ -449,10 +449,13 @@
 "Assets/Scripts/Weapons/WeaponScripts/AimWeaponEvent.cs"
 "Assets/Scripts/Weapons/WeaponScripts/FireWeapon.cs"
 "Assets/Scripts/Weapons/WeaponScripts/FireWeaponEvent.cs"
+"Assets/Scripts/Weapons/WeaponScripts/ReloadWeapon.cs"
+"Assets/Scripts/Weapons/WeaponScripts/ReloadWeaponEvent.cs"
 "Assets/Scripts/Weapons/WeaponScripts/SetActiveWeaponEvent.cs"
 "Assets/Scripts/Weapons/WeaponScripts/Weapon.cs"
 "Assets/Scripts/Weapons/WeaponScripts/WeaponDetails.cs"
 "Assets/Scripts/Weapons/WeaponScripts/WeaponFiredEvent.cs"
+"Assets/Scripts/Weapons/WeaponScripts/WeaponReloadedEvent.cs"
 -langversion:9.0
 /deterministic
 /optimize+

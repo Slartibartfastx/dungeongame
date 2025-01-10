@@ -37,6 +37,9 @@ public class Player : MonoBehaviour
     [HideInInspector] public FireWeaponEvent fireWepEvent;
     [HideInInspector] public WeaponFiredEvent wepFiredEvent;
     [HideInInspector] public FireWeapon fireWep;
+    [HideInInspector] public ReloadWeaponEvent reloadWeaponEvent;
+    [HideInInspector] public WeaponReloadedEvent weaponReloadedEvent;
+    [HideInInspector] public ReloadWeapon reloadWeapon;
     public List<Weapon> wepList = new List<Weapon>();
     private void Awake()
     {
@@ -51,6 +54,9 @@ public class Player : MonoBehaviour
         fireWepEvent = GetComponent<FireWeaponEvent>();
         wepFiredEvent = GetComponent<WeaponFiredEvent>(); 
         fireWep = GetComponent<FireWeapon>();
+        reloadWeaponEvent = GetComponent<ReloadWeaponEvent>();
+        weaponReloadedEvent= GetComponent<WeaponReloadedEvent>();
+        reloadWeapon = GetComponent<ReloadWeapon>();
     }
 
     public void Initalize(PlayerDetails playerDetailss)

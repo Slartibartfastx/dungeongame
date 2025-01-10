@@ -110,7 +110,7 @@ public class PlayerControl : MonoBehaviour
         // Fire when left mouse button is clicked
         if (Input.GetMouseButton(0))
         {
-            Debug.Log("fired");
+            
             // Trigger fire weapon event
             player.fireWepEvent.CallFireWeaponEvent(true, playerAimDirection, playerAngleDegrees, weaponAngleDegrees, weaponDirection);
            
@@ -161,6 +161,8 @@ public class PlayerControl : MonoBehaviour
         // Fire weapon input
         FireWeaponInput(wepDir, wepAngDeg, playerAngDeg, playerAimDir);
 
+        ReloadWeaponInput();
+
     }
 
     private void AimWepInput(out Vector3 wepDir, out float wepAngDeg, out float playerAngDeg, out AimDir playerAimDir)
@@ -177,6 +179,27 @@ public class PlayerControl : MonoBehaviour
         playerAimDir = HelperUtilities.getAimdir(playerAngDeg);
 
         player.aimWeaponEvent.CallAimWeaponEvent(playerAimDir, playerAngDeg, wepAngDeg, wepDir);
+    }
+
+    private void ReloadWeaponInput()
+    {
+        Weapon currentWeapon = player.activeWep.GetCurrentWeapon();
+
+        // if current weapon is reloading return
+        if (currentWeapon.isReloading) return;
+
+        // remaining ammo is less than clip capacity then return and not infinite ammo then return
+        if (currentWeapon.wepRemainingAmmo < currentWeapon.wepDetails.clipCapacity && !currentWeapon.wepDetails.infiniteAmmo) return;
+
+        // if ammo in clip equals clip capacity then return
+        if (currentWeapon.wepClipRemainingAmmo == currentWeapon.wepDetails.clipCapacity) return;
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            // Call the reload weapon event
+            player.reloadWeaponEvent.CallReloadWeaponEvent(player.activeWep.GetCurrentWeapon(), 0);
+        }
+
     }
 
     #region VALIDATION
