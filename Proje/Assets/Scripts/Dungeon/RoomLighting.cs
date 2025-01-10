@@ -28,9 +28,7 @@ public class RoomLighting : MonoBehaviour
     }
 
 
-    /// <summary>
-    /// Handle room changed event
-    /// </summary>
+
     private void StaticEventHandler_OnRoomChanged(RoomChangedEventArgs roomChangedEventArgs)
     {
         // If this is the room entered and the room isn't already lit, then fade in the room lighting
@@ -53,18 +51,14 @@ public class RoomLighting : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// Fade in the room lighting
-    /// </summary>
+   
     private void FadeInRoomLighting()
     {
         // Fade in the lighting for the room tilemaps
         StartCoroutine(FadeInRoomLightingRoutine(instantiatedRoom));
     }
 
-    /// <summary>
-    /// Fade in the room lighting coroutine
-    /// </summary>
+
     private IEnumerator FadeInRoomLightingRoutine(InstantiatedRoom instantiatedRoom)
     {
         // Create new material to fade in

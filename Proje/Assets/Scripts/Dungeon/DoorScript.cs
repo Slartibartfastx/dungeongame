@@ -45,9 +45,7 @@ public class DoorScript : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// Open the door
-    /// </summary>
+ 
     public void OpenDoor()
     {
         if (isOpen) return;
@@ -64,9 +62,7 @@ public class DoorScript : MonoBehaviour
         // SoundEffectManager.Instance.PlaySoundEffect(GameResources.Instance.doorOpenCloseSoundEffect);
     }
 
-    /// <summary>
-    /// Lock the door
-    /// </summary>
+
     public void LockDoor()
     {
         isOpen = false;
@@ -76,9 +72,7 @@ public class DoorScript : MonoBehaviour
         // set open to false to close door
         animator.SetBool(Settings.open, false);
     }
-    /// <summary>
-    /// Unlock the door
-    /// </summary>
+ 
     public void UnlockDoor()
     {
         doorCollider.enabled = false;
@@ -91,9 +85,7 @@ public class DoorScript : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// Update the state of door components
-    /// </summary>
+
     /// <param name="isLocked">Indicates if the door should be locked</param>
     private void UpdateDoorState(bool isLocked)
     {

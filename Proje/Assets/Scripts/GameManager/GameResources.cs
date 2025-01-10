@@ -79,6 +79,22 @@ public class GameResources : MonoBehaviour
     #endregion Tooltip
     public TileBase preferredEnemyPathTile;
 
+    #region Header UI
+    [Space(10)]
+    [Header("UI")]
+    #endregion
+    #region Tooltip
+    [Tooltip("Populate with heart image prefab")]
+    #endregion
+    public GameObject heartPrefab;
+    #region Tooltip
+    [Tooltip("Populate with ammo icon prefab")]
+    #endregion
+    public GameObject ammoIconPrefab;
+    #region Tooltip
+    [Tooltip("The score prefab")]
+    #endregion
+    public GameObject scorePrefab;
     #region Validation
 #if UNITY_EDITOR
     // Validate the scriptable object details entered

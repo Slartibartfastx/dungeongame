@@ -57,27 +57,21 @@ public class EnemyWeaponAI : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// Calculate a random weapon shoot duration between the min and max values
-    /// </summary>
+ 
     private float CalculateShootDuration()
     {
         // Calculate a random weapon shoot duration
         return Random.Range(enemyDetailsConfig.firingDurationMin, enemyDetailsConfig.firingDurationMax);
     }
 
-    /// <summary>
-    /// Calculate a random weapon shoot interval between the min and max values
-    /// </summary>
+
     private float CalculateShootInterval()
     {
         // Calculate a random weapon shoot interval
         return Random.Range(enemyDetailsConfig.firingIntervalMin, enemyDetailsConfig.firingIntervalMax);
     }
 
-    /// <summary>
-    /// Fire the weapon
-    /// </summary>
+ 
     private void ShootWeapon()
     {
         // Player distance

@@ -263,6 +263,8 @@ GameObject:
   - component: {fileID: 1714879478350892907}
   - component: {fileID: 6638422865072839290}
   - component: {fileID: 3135261747788700068}
+  - component: {fileID: -339259838256030133}
+  - component: {fileID: -5696818561431660651}
   m_Layer: 10
   m_Name: Player
   m_TagString: Player
@@ -529,6 +531,7 @@ MonoBehaviour:
   fireWep: {fileID: 0}
   reloadWeaponEvent: {fileID: 0}
   weaponReloadedEvent: {fileID: 0}
+  reloadWeapon: {fileID: 0}
   wepList: []
 --- !u!114 &263633222490009949
 MonoBehaviour:
@@ -751,6 +754,30 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 906e3cc7b712a674ebb3d6a0daab2aae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-339259838256030133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4348939323579831417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 980b810aba8bad94c92c1c95b6b4045e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-5696818561431660651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4348939323579831417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00c31b7a55b0f15409787a00e19a49d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &4614161814256923209

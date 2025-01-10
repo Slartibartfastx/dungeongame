@@ -25,9 +25,7 @@ public class CamTarget : MonoBehaviour
         SetCinemachineTargetGroup();
     }
 
-    /// <summary>
-    /// Set the cinemachine camera target group.
-    /// </summary>
+  
     private void SetCinemachineTargetGroup()
     {
         // Create target group for cinemachine for the cinemachine camera to follow  - group will include the player and screen cursor

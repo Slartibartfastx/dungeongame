@@ -3,10 +3,6 @@ using UnityEngine;
 
 public static class AStar
 {
-    /// <summary>
-    /// Builds a path for the room, from the startGridPosition to the endGridPosition, and adds
-    /// movement steps to the returned Stack. Returns null if no path is found.
-    /// </summary>
     public static Stack<Vector3> BuildPath(Room room, Vector3Int startGridPosition, Vector3Int endGridPosition)
     {
         // Adjust positions by lower bounds
@@ -40,9 +36,7 @@ public static class AStar
         return null;
     }
 
-    /// <summary>
-    /// Creates a movement path from the target node to the start node by traversing the parent nodes.
-    /// </summary>
+
     private static Stack<Vector3> BuildMovementPath(AStarNode targetNode, Room room)
     {
         if (targetNode == null || room == null || room.instantiatedRoom == null)
@@ -77,9 +71,7 @@ public static class AStar
         return path;
     }
 
-    /// <summary>
-    /// Finds the shortest path from the start node to the target node. Returns the target node if a path is found; otherwise, returns null.
-    /// </summary>
+
     private static AStarNode FindShortestPath(AStarNode startNode, AStarNode targetNode, AStarGridNodes gridNodes, List<AStarNode> openNodes, HashSet<AStarNode> closedNodes, InstantiatedRoom instantiatedRoom)
     {
         // Initialize the open list with the starting node
@@ -113,12 +105,6 @@ public static class AStar
     }
 
 
-    /// <summary>
-    /// Evaluate neighbour nodes
-    /// </summary>
-    /// <summary>
-    /// Evaluates and processes each valid neighbor of the current node.
-    /// </summary>
     private static void EvaluateNeighbours(AStarNode currentNode, AStarNode targetNode, AStarGridNodes gridNodes, List<AStarNode> openNodeList, HashSet<AStarNode> closedNodeHashSet, InstantiatedRoom instantiatedRoom)
     {
         Vector2Int currentPosition = currentNode.GridPosition;
@@ -161,9 +147,7 @@ public static class AStar
     }
 
 
-    /// <summary>
-    /// Returns the distance int between nodeA and nodeB
-    /// </summary>
+   
     private static int GetDistance(AStarNode nodeA, AStarNode nodeB)
     {
         int dstX = Mathf.Abs(nodeA.GridPosition.x - nodeB.GridPosition.x);
@@ -174,10 +158,7 @@ public static class AStar
         return 14 * dstX + 10 * (dstY - dstX);
     }
 
-    /// <summary>
-    /// Evaluates a neighbor node based on its position and checks its validity against the grid, closed list, and obstacles.
-    /// Returns the valid neighbor node if it exists; otherwise, returns null.
-    /// </summary>
+   
     private static AStarNode GetValidNodeNeighbour(int x, int y, AStarGridNodes gridNodes, HashSet<AStarNode> closedNodeHashSet, InstantiatedRoom instantiatedRoom)
     {
         // Ensure the neighbor node is within bounds
@@ -198,18 +179,14 @@ public static class AStar
         return null; // If not walkable or already in the closed list, return null
     }
 
-    /// <summary>
-    /// Checks if the given position is within the grid bounds.
-    /// </summary>
+   
     private static bool IsWithinBounds(int x, int y, InstantiatedRoom instantiatedRoom)
     {
         return x >= 0 && x < instantiatedRoom.room.templateUpperBounds.x - instantiatedRoom.room.templateLowerBounds.x &&
                y >= 0 && y < instantiatedRoom.room.templateUpperBounds.y - instantiatedRoom.room.templateLowerBounds.y;
     }
 
-    /// <summary>
-    /// Checks if the given grid position is walkable (not blocked by an obstacle).
-    /// </summary>
+   
     private static bool IsWalkable(int x, int y, InstantiatedRoom instantiatedRoom)
     {
         // Get the movement penalty for the grid space (0 indicates an obstacle)

@@ -17,9 +17,7 @@ public class DoorLighting : MonoBehaviour
         fadeMaterial = new Material(GameResources.Instance.variableLitShader);
     }
 
-    /// <summary>
-    /// Fade in door lighting.
-    /// </summary>
+ 
     public void FadeInDoor()
     {
         if (isLit) return;
@@ -34,9 +32,7 @@ public class DoorLighting : MonoBehaviour
         isLit = true;
     }
 
-    /// <summary>
-    /// Coroutine to fade in the door's lighting.
-    /// </summary>
+
     private IEnumerator FadeInDoorRoutine(SpriteRenderer spriteRenderer)
     {
         // Assign fade material
@@ -55,9 +51,6 @@ public class DoorLighting : MonoBehaviour
         spriteRenderer.material = GameResources.Instance.litMaterial;
     }
 
-    /// <summary>
-    /// Trigger fade in when the player or their weapon enters the trigger area.
-    /// </summary>
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag(Settings.playerTag) || collision.CompareTag(Settings.playerWeapon))

@@ -46,9 +46,7 @@ public class EnemyMovement : MonoBehaviour
     }
 
 
-    /// <summary>
-    /// Use AStar pathfinding to build a path to the player - and then move the enemy to each grid location on the path
-    /// </summary>
+
     private void MoveEnemy()
     {
         // Movement cooldown timer
@@ -98,9 +96,7 @@ public class EnemyMovement : MonoBehaviour
     }
 
 
-    /// <summary>
-    /// Coroutine to move the enemy to the next location on the path
-    /// </summary>
+   
     private IEnumerator MoveEnemyRoutine(Stack<Vector3> movementSteps)
     {
         while (movementSteps.Count > 0)
@@ -125,9 +121,7 @@ public class EnemyMovement : MonoBehaviour
 
     }
 
-    /// <summary>
-    /// Use the AStar static class to create a path for the enemy
-    /// </summary>
+
     private void CreatePath()
     {
         Room currentRoom = GameManager.Instance.GetCurrentRoom();
@@ -162,9 +156,7 @@ public class EnemyMovement : MonoBehaviour
     }
  
 
-    /// <summary>
-    /// Get the nearest position to the player that isn't on an obstacle
-    /// </summary>
+
     private Vector3Int GetNearestNonObstaclePlayerPosition(Room currentRoom)
     {
         Vector3 playerPosition = GameManager.Instance.GetPlayer().GetPlayerPosition();

@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\Utilities\HelperUtilities.cs" />
     <Compile Include="Assets\Scripts\Weapons\WeaponScripts\AimWeapon.cs" />
     <Compile Include="Assets\Scripts\Dungeon\RoomEnemySpawnParameters.cs" />
+    <Compile Include="Assets\Scripts\UI\HP.cs" />
     <Compile Include="Assets\Scripts\Health\HealthEvent.cs" />
     <Compile Include="Assets\Scripts\Dungeon\DungeonBuilder.cs" />
     <Compile Include="Assets\Scripts\Effects\MaterializeEffect.cs" />

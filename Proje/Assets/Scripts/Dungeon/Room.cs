@@ -29,9 +29,7 @@ public class Room
         doorWayList = new List<Doorway>();
     }
 
-    /// <summary>
-    /// Get the number of enemies to spawn for this room in this dungeon level
-    /// </summary>
+   
     public int GetNumberOfEnemiesToSpawn(DungeonLevelScriptableObject dungeonLevel)
     {
         foreach (RoomEnemySpawnParameters roomEnemySpawnParameters in roomLevelEnemySpawnParametersList)
@@ -45,9 +43,7 @@ public class Room
         return 0;
     }
 
-    /// <summary>
-    /// Get the room enemy spawn parameters for this dungeon level - if none found then return null
-    /// </summary>
+ 
     public RoomEnemySpawnParameters GetRoomEnemySpawnParameters(DungeonLevelScriptableObject dungeonLevel)
     {
         foreach (RoomEnemySpawnParameters roomEnemySpawnParameters in roomLevelEnemySpawnParametersList)

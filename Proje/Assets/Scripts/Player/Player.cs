@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
 #region REQUIRE COMPONENTS
+[RequireComponent(typeof(HealthEvent))]
+[RequireComponent(typeof(DestroyedEvent))]
+[RequireComponent(typeof(Destroyed))]
 [RequireComponent(typeof(SortingGroup))]
 [RequireComponent(typeof(SpriteRenderer))]
 [RequireComponent(typeof(MovementByVelocity))]
@@ -25,9 +28,12 @@ using UnityEngine.Rendering;
 #endregion REQUIRE COMPONENTS
 public class Player : MonoBehaviour
 {
+
     [HideInInspector] public PlayerDetails playerDetails;
     [HideInInspector] public MovementByVelocityEvent movByVelEvent;
+    [HideInInspector] public HealthEvent healthEvent;
     [HideInInspector] public Health hp;
+    [HideInInspector] public DestroyedEvent destroyedEvent;
     [HideInInspector] public SpriteRenderer spriteRenderer;
     [HideInInspector] public Animator animator;
     [HideInInspector] public IdleEvent idleEvent;
@@ -43,6 +49,8 @@ public class Player : MonoBehaviour
     public List<Weapon> wepList = new List<Weapon>();
     private void Awake()
     {
+        healthEvent = GetComponent<HealthEvent>();
+        destroyedEvent = GetComponent<DestroyedEvent>();
         movByVelEvent = GetComponent<MovementByVelocityEvent>();
         hp = GetComponent<Health>();
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -64,6 +72,30 @@ public class Player : MonoBehaviour
         this.playerDetails = playerDetailss;
         CreatePlayerStartingWeps();
         setPlayerHP();
+    }
+
+    private void OnEnable()
+    {
+        // Subscribe to player health event
+        healthEvent.OnHealthChanged += HealthEvent_OnHealthChanged;
+    }
+
+    private void OnDisable()
+    {
+        // Unsubscribe from player health event
+        healthEvent.OnHealthChanged -= HealthEvent_OnHealthChanged;
+    }
+    /// <summary>
+    /// Handle health changed event
+    /// </summary>
+    private void HealthEvent_OnHealthChanged(HealthEvent healthEvent, HealthEventArgs healthEventArgs)
+    {
+        // If player has died
+        if (healthEventArgs.healthAmount <= 0f)
+        {
+            destroyedEvent.CallDestroyedEvent(true/*, 0*/);
+        }
+
     }
 
     public void setPlayerHP()

@@ -107,7 +107,7 @@ public class Enemy : MonoBehaviour
     private void EnemyDestroyed()
     {
         DestroyedEvent destroyedEvent = GetComponent<DestroyedEvent>();
-        destroyedEvent.CallDestroyedEvent(/*false, health.GetStartingHealth()*/);
+        destroyedEvent.CallDestroyedEvent(false /*, health.GetStartingHealth()*/);
     }
 
    

@@ -37,18 +37,14 @@ public class AnimateEnemy : MonoBehaviour
        enemy.aimWeaponEvent.OnWeaponAim -= AimWeaponEvent_OnWeaponAim;
     }
 
-    /// <summary>
-    /// On weapon aim event handler
-    /// </summary>
+
    private void AimWeaponEvent_OnWeaponAim(AimWeaponEvent aimWeaponEvent, AimWeaponEventArgs aimWeaponEventArgs)
     {
         InitialiseAimAnimationParameters();
         SetAimWeaponAnimationParameters(aimWeaponEventArgs.aimDirection);
     }
 
-    /// <summary>
-    /// On movement event handler
-    /// </summary>
+ 
     private void MovementToPositionEvent_OnMovementToPosition(MovementToPositionEvent movementToPositionEvent, MovementToPositionArgs movementToPositionArgs)
     {
        /* if (enemy.transform.position.x < GameManager.Instance.GetPlayer().transform.position.x)
@@ -62,17 +58,13 @@ public class AnimateEnemy : MonoBehaviour
         SetMovementAnimationParameters();
     }
 
-    /// <summary>
-    /// On idle event handler
-    /// </summary>
+
     private void IdleEvent_OnIdle(IdleEvent idleEvent)
     {
         SetIdleAnimationParameters();
     }
 
-    /// <summary>
-    /// Initialise aim animation parameters
-    /// </summary>
+  
     private void InitialiseAimAnimationParameters()
     {
         enemy.animator.SetBool(Settings.aimUp, false);
@@ -83,9 +75,7 @@ public class AnimateEnemy : MonoBehaviour
         enemy.animator.SetBool(Settings.aimDown, false);
     }
 
-    /// <summary>
-    /// Set movement animation parameters
-    /// </summary>
+ 
     private void SetMovementAnimationParameters()
     {
         // Set Moving
@@ -94,9 +84,7 @@ public class AnimateEnemy : MonoBehaviour
     }
 
 
-    /// <summary>
-    /// Set idle animation parameters
-    /// </summary>
+
     private void SetIdleAnimationParameters()
     {
         // Set idle
@@ -104,9 +92,7 @@ public class AnimateEnemy : MonoBehaviour
         enemy.animator.SetBool(Settings.isIdle, true);
     }
 
-    /// <summary>
-    /// Set aim animation parameters
-    /// </summary>
+ 
     private void SetAimWeaponAnimationParameters(AimDir aimDirection)
     {
         // Set aim direction

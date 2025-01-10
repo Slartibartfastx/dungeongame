@@ -59,9 +59,7 @@ public class Health : MonoBehaviour
       */
     }
 
-    /// <summary>
-    /// Public method called when damage is taken
-    /// </summary>
+
     public void TakeDamage(int damageAmount)
     {
         // bool isRolling = false;

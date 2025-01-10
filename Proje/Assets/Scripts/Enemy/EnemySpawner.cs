@@ -26,9 +26,7 @@ public class EnemySpawner : SingletonMonoBehaviour<EnemySpawner>
         StaticEventHandler.OnRoomChanged -= StaticEventHandler_OnRoomChanged;
     }
 
-    /// <summary>
-    /// Process a change in room
-    /// </summary>
+ 
     private void StaticEventHandler_OnRoomChanged(RoomChangedEventArgs roomChangedEventArgs)
     {
         enemiesSpawnedSoFar = 0;
@@ -76,9 +74,7 @@ public class EnemySpawner : SingletonMonoBehaviour<EnemySpawner>
         SpawnEnemies();
     }
 
-    /// <summary>
-    /// Spawn the enemies
-    /// </summary>
+ 
     private void SpawnEnemies()
     {
         // Set gamestate engaging boss
@@ -99,9 +95,7 @@ public class EnemySpawner : SingletonMonoBehaviour<EnemySpawner>
         StartCoroutine(SpawnEnemiesRoutine());
     }
 
-    /// <summary>
-    /// Spawn the enemies coroutine
-    /// </summary>
+  
     private IEnumerator SpawnEnemiesRoutine()
     {
         Grid grid = currentRoom.instantiatedRoom.grid;
@@ -131,25 +125,19 @@ public class EnemySpawner : SingletonMonoBehaviour<EnemySpawner>
         }
     }
 
-    /// <summary>
-    /// Get a random spawn interval between the minimum and maximum values
-    /// </summary>
+  
     private float GetEnemySpawnInterval()
     {
         return (Random.Range(roomEnemySpawnParameters.minSpawnInterval, roomEnemySpawnParameters.maxSpawnInterval));
     }
 
-    /// <summary>
-    /// Get a random number of concurrent enemies between the minimum and maximum values
-    /// </summary>
+
     private int GetConcurrentEnemies()
     {
         return (Random.Range(roomEnemySpawnParameters.minConcurrentEnemies, roomEnemySpawnParameters.maxConcurrentEnemies));
     }
 
-    /// <summary>
-    /// Create an enemy in the specified position
-    /// </summary>
+
     private void CreateEnemy(EnemyDetails enemyDetails, Vector3 position)
     {
         // keep track of the number of enemies spawned so far 
@@ -172,10 +160,8 @@ public class EnemySpawner : SingletonMonoBehaviour<EnemySpawner>
 
     }
     
-    /// <summary>
-    /// Process enemy destroyed
-    /// </summary>
-    private void Enemy_OnDestroyed(DestroyedEvent destroyedEvent/*, DestroyedEventArgs destroyedEventArgs*/)
+
+    private void Enemy_OnDestroyed(DestroyedEvent destroyedEvent, DestroyedEventArgs destroyedEventArgs)
     {
         // Unsubscribe from event
         destroyedEvent.OnDestroyed -= Enemy_OnDestroyed;

@@ -97,9 +97,7 @@ public class RoomTemplateSO : ScriptableObject
 
     public List<RoomEnemySpawnParameters> roomEnemySpawnParametersList;
 
-    /// <summary>
-    /// Returns the list of Entrances for the room template
-    /// </summary>
+ 
     public List<Doorway> GetDoorwayList()
     {
         return doorwayList;

@@ -60,9 +60,7 @@ public class InstantiatedRoom : MonoBehaviour
             StaticEventHandler.CallRoomChangedEvent(room);
         }
     }
-    /// <summary>
-    /// Initialise The Instantiated Room
-    /// </summary>
+
     public void Initialise(GameObject roomGameobject)
     {
         PopulateTilemapMemberVariables(roomGameobject);
@@ -73,9 +71,7 @@ public class InstantiatedRoom : MonoBehaviour
 
     }
 
-    /// <summary>
-    /// Update obstacles used by AStar pathfinmding.
-    /// </summary>
+
     private void AddObstaclesAndPreferredPaths()
     {
         // this array will be populated with wall obstacles 
@@ -115,9 +111,6 @@ public class InstantiatedRoom : MonoBehaviour
     }
 
 
-    /// <summary>
-    /// Block Off Unused Doorways In The Room
-    /// </summary>
     private void BlockOffUnusedDoorWays()
     {
         if (room == null || room.doorWayList == null) return;
@@ -136,9 +129,7 @@ public class InstantiatedRoom : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// Block a doorway on a tilemap layer
-    /// </summary>
+ 
     private void BlockDoorway(Tilemap tilemap, Doorway doorway)
     {
         switch (doorway.orientation)
@@ -159,9 +150,8 @@ public class InstantiatedRoom : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// Block doorway tiles based on orientation
-    /// </summary>
+
+    
     private void BlockDoorwayTiles(Tilemap tilemap, Doorway doorway, bool isHorizontal)
     {
         Vector2Int startPosition = doorway.doorwayStartCopyPosition;
@@ -191,9 +181,7 @@ public class InstantiatedRoom : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// Populate the tilemap and grid memeber variables.
-    /// </summary>
+
     private void PopulateTilemapMemberVariables(GameObject roomGameobject)
     {
         // Get the grid component.
@@ -233,9 +221,7 @@ public class InstantiatedRoom : MonoBehaviour
 
     }
 
-    /// <summary>
-    /// Disable collision tilemap renderer
-    /// </summary>
+
     private void DisableCollisionTilemapRenderer()
     {
         // Disable collision tilemap renderer
@@ -245,9 +231,7 @@ public class InstantiatedRoom : MonoBehaviour
 
 
 
-    /// <summary>
-    /// Add opening doors if this is not a corridor room
-    /// </summary>
+
     private void AddDoorsToRooms()
     {
         // if the room is a corridor then return
@@ -314,9 +298,6 @@ public class InstantiatedRoom : MonoBehaviour
     }
 
 
-    /// <summary>
-    /// Lock the room doors
-    /// </summary>
     public void LockDoors()
     {
         // Get all DoorScript components in children of this room object
@@ -339,25 +320,18 @@ public class InstantiatedRoom : MonoBehaviour
     }
 
 
-    /// <summary>
-    /// Disable the room trigger collider that is used to trigger when the player enters a room
-    /// </summary>
+   
     public void DisableRoomCollider()
     {
         boxCollider2D.enabled = false;
     }
 
-    /// <summary>
-    /// Unlock the room doors
-    /// </summary>
+ 
     public void UnlockDoors(float doorUnlockDelay)
     {
         StartCoroutine(UnlockDoorsRoutine(doorUnlockDelay));
     }
 
-    /// <summary>
-    /// Unlock the room doors routine
-    /// </summary>
     private IEnumerator UnlockDoorsRoutine(float doorUnlockDelay)
     {
         if (doorUnlockDelay > 0f)
@@ -374,9 +348,7 @@ public class InstantiatedRoom : MonoBehaviour
         // Enable room trigger collider
         EnableRoomCollider();
     }
-    /// <summary>
-    /// Enable the room trigger collider that is used to trigger when the player enters a room
-    /// </summary>
+  
     public void EnableRoomCollider()
     {
         boxCollider2D.enabled = true;

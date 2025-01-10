@@ -59,9 +59,6 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
 
     }
 
-    /// <summary>
-    /// Create player in scene at position
-    /// </summary>
     private void InstantiatePlayer()
     {
         // Instantiate player

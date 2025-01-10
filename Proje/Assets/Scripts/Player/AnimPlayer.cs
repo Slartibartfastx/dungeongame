@@ -41,9 +41,7 @@ public class AnimPlayer : MonoBehaviour
 
   
 
-    /// <summary>
-    /// On idle event handler
-    /// </summary>
+ 
     private void IdleEvent_OnIdle(IdleEvent idleEvent)
     {
 
@@ -55,9 +53,7 @@ public class AnimPlayer : MonoBehaviour
         SetMovementAnimationParameters();
     }
 
-    /// <summary>
-    /// On weapon aim event handler
-    /// </summary>
+    
     private void AimWeaponEvent_OnWeaponAim(AimWeaponEvent aimWeaponEvent, AimWeaponEventArgs aimWeaponEventArgs)
     {
         InitializeAimAnimationParameters();
@@ -65,9 +61,7 @@ public class AnimPlayer : MonoBehaviour
         SetAimWeaponAnimationParameters(aimWeaponEventArgs.aimDirection);
     }
 
-    /// <summary>
-    /// Initialise aim animation parameters
-    /// </summary>
+
     private void InitializeAimAnimationParameters()
     {
         player.animator.SetBool(Settings.aimUp, false);
@@ -80,9 +74,7 @@ public class AnimPlayer : MonoBehaviour
 
 
 
-    /// <summary>
-    /// Set movement animation parameters
-    /// </summary>
+   
     private void SetMovementAnimationParameters()
     {
         player.animator.SetBool(Settings.isMoving, true);
@@ -92,18 +84,13 @@ public class AnimPlayer : MonoBehaviour
  
     
 
-    /// <summary>
-    /// Set movement animation parameters
-    /// </summary>
+  
     private void SetIdleAnimationParameters()
     {
         player.animator.SetBool(Settings.isMoving, false);
         player.animator.SetBool(Settings.isIdle, true);
     }
 
-    /// <summary>
-    /// Set aim animation parameters
-    /// </summary>
     private void SetAimWeaponAnimationParameters(AimDir aimDirection)
     {
         // Set aim direction

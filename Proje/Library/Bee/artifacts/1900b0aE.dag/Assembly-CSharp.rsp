@@ -438,6 +438,7 @@
 "Assets/Scripts/Player/PlayerDetails.cs"
 "Assets/Scripts/PoolManager/PoolManager.cs"
 "Assets/Scripts/StaticEvents/StaticEvent.cs"
+"Assets/Scripts/UI/HP.cs"
 "Assets/Scripts/Utilities/HelperUtilities.cs"
 "Assets/Scripts/Utilities/RandomSpawnableObject.cs"
 "Assets/Scripts/Utilities/SpawnableObjectRatio.cs"

@@ -27,16 +27,16 @@ public class Destroyed : MonoBehaviour
 
     }
 
-    private void DestroyedEvent_OnDestroyed(DestroyedEvent destroyedEvent/*, DestroyedEventArgs destroyedEventArgs*/)
+    private void DestroyedEvent_OnDestroyed(DestroyedEvent destroyedEvent, DestroyedEventArgs destroyedEventArgs)
     {
-        /* if (destroyedEventArgs.playerDied)
+         if (destroyedEventArgs.playerDied)
          {
              gameObject.SetActive(false);
          }
          else
          {
              Destroy(gameObject);
-         }*/
+         }
         Destroy(gameObject);
     }
 }
