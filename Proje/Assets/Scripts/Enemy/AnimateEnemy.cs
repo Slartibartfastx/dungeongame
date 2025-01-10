@@ -22,7 +22,7 @@ public class AnimateEnemy : MonoBehaviour
         enemy.idleEvent.OnIdle += IdleEvent_OnIdle;
 
         // Subscribe to weapon aim event
-       // enemy.aimWeaponEvent.OnWeaponAim += AimWeaponEvent_OnWeaponAim;
+        enemy.aimWeaponEvent.OnWeaponAim += AimWeaponEvent_OnWeaponAim;
     }
 
     private void OnDisable()
@@ -34,31 +34,31 @@ public class AnimateEnemy : MonoBehaviour
         enemy.idleEvent.OnIdle -= IdleEvent_OnIdle;
 
         // Unsubscribe from weapon aim event event
-       // enemy.aimWeaponEvent.OnWeaponAim -= AimWeaponEvent_OnWeaponAim;
+       enemy.aimWeaponEvent.OnWeaponAim -= AimWeaponEvent_OnWeaponAim;
     }
 
     /// <summary>
     /// On weapon aim event handler
     /// </summary>
-  /*  private void AimWeaponEvent_OnWeaponAim(AimWeaponEvent aimWeaponEvent, AimWeaponEventArgs aimWeaponEventArgs)
+   private void AimWeaponEvent_OnWeaponAim(AimWeaponEvent aimWeaponEvent, AimWeaponEventArgs aimWeaponEventArgs)
     {
         InitialiseAimAnimationParameters();
         SetAimWeaponAnimationParameters(aimWeaponEventArgs.aimDirection);
-    }*/
+    }
 
     /// <summary>
     /// On movement event handler
     /// </summary>
     private void MovementToPositionEvent_OnMovementToPosition(MovementToPositionEvent movementToPositionEvent, MovementToPositionArgs movementToPositionArgs)
     {
-        if (enemy.transform.position.x < GameManager.Instance.GetPlayer().transform.position.x)
+       /* if (enemy.transform.position.x < GameManager.Instance.GetPlayer().transform.position.x)
         {
             SetAimWeaponAnimationParameters(AimDir.Right);
         }
         else
         {
             SetAimWeaponAnimationParameters(AimDir.Left);
-        }
+        }*/
         SetMovementAnimationParameters();
     }
 

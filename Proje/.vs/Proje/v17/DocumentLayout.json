@@ -3,23 +3,49 @@
   "WorkspaceRootPath": "D:\\blmproje\\Proje\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|D:\\blmproje\\Proje\\assets\\scripts\\player\\playercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|d:\\blmproje\\proje\\assets\\scripts\\enemy\\enemyweaponai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemyweaponai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|D:\\blmproje\\Proje\\assets\\scripts\\enemy\\animateenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\animateenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|d:\\blmproje\\proje\\assets\\scripts\\enemy\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Udemy - Unity 2D Dungeon Gunner Roguelike Development Course 2024-9\\33 - Finished Game\\DungeonGunnerCourse\\Assets\\Scripts\\Weapons\\Weapons\\ReloadWeapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Udemy - Unity 2D Dungeon Gunner Roguelike Development Course 2024-9\\33 - Finished Game\\DungeonGunnerCourse\\Assets\\Scripts\\Enemies\\EnemyWeaponAI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Udemy - Unity 2D Dungeon Gunner Roguelike Development Course 2024-9\\33 - Finished Game\\DungeonGunnerCourse\\Assets\\Scripts\\Weapons\\Weapons\\FireWeaponEvent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|D:\\blmproje\\Proje\\assets\\scripts\\weapons\\weaponscripts\\fireweaponevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\weapons\\weaponscripts\\fireweaponevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|D:\\blmproje\\Proje\\assets\\scripts\\enemy\\enemydetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemydetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|d:\\blmproje\\proje\\assets\\scripts\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|D:\\blmproje\\Proje\\assets\\scripts\\weapons\\weaponscripts\\fireweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\weapons\\weaponscripts\\fireweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|D:\\blmproje\\Proje\\assets\\scripts\\player\\playercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|D:\\blmproje\\Proje\\assets\\scripts\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|d:\\blmproje\\proje\\assets\\scripts\\weapons\\weaponscripts\\reloadweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|D:\\blmproje\\Proje\\assets\\scripts\\weapons\\weaponscripts\\reloadweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\weapons\\weaponscripts\\reloadweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Udemy - Unity 2D Dungeon Gunner Roguelike Development Course 2024-9\\33 - Finished Game\\DungeonGunnerCourse\\Assets\\Scripts\\Weapons\\Weapons\\ReloadWeapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|D:\\blmproje\\Proje\\assets\\scripts\\weapons\\weaponscripts\\reloadweaponevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,19 +55,11 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Udemy - Unity 2D Dungeon Gunner Roguelike Development Course 2024-9\\33 - Finished Game\\DungeonGunnerCourse\\Assets\\Scripts\\Player\\PlayerControl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|D:\\blmproje\\Proje\\assets\\scripts\\enemy\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|D:\\blmproje\\Proje\\assets\\scripts\\weapons\\weaponscripts\\weaponreloadedevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\weapons\\weaponscripts\\weaponreloadedevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Udemy - Unity 2D Dungeon Gunner Roguelike Development Course 2024-9\\33 - Finished Game\\DungeonGunnerCourse\\Assets\\Scripts\\Weapons\\Weapons\\WeaponReloadedEvent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|D:\\blmproje\\Proje\\assets\\scripts\\weapons\\weaponscripts\\fireweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\weapons\\weaponscripts\\fireweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|D:\\blmproje\\Proje\\assets\\scripts\\nodegraph\\nodegraphobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -102,10 +120,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|D:\\blmproje\\Proje\\assets\\scripts\\weapons\\weaponscripts\\weaponfiredevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\weapons\\weaponscripts\\weaponfiredevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|D:\\blmproje\\Proje\\assets\\scripts\\weapons\\weaponscripts\\fireweaponevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\weapons\\weaponscripts\\fireweaponevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|D:\\blmproje\\Proje\\assets\\scripts\\weapons\\weaponscripts\\weapondetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -188,10 +202,6 @@
       "RelativeMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\utilities\\spawnableobjectratio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|D:\\blmproje\\Proje\\assets\\scripts\\enemy\\animateenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\animateenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|D:\\blmproje\\Proje\\assets\\scripts\\movements\\movementdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\movements\\movementdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -248,24 +258,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ReloadWeapon.cs",
-              "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Weapons\\WeaponScripts\\ReloadWeapon.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Weapons\\WeaponScripts\\ReloadWeapon.cs",
-              "ToolTip": "D:\\blmproje\\Proje\\Assets\\Scripts\\Weapons\\WeaponScripts\\ReloadWeapon.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Weapons\\WeaponScripts\\ReloadWeapon.cs",
-              "ViewState": "AgIAAHcAAAAAAAAAAAAswIQAAAAvAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "FireWeaponEvent.cs",
+              "DocumentMoniker": "D:\\Udemy - Unity 2D Dungeon Gunner Roguelike Development Course 2024-9\\33 - Finished Game\\DungeonGunnerCourse\\Assets\\Scripts\\Weapons\\Weapons\\FireWeaponEvent.cs",
+              "RelativeDocumentMoniker": "..\\..\\Udemy - Unity 2D Dungeon Gunner Roguelike Development Course 2024-9\\33 - Finished Game\\DungeonGunnerCourse\\Assets\\Scripts\\Weapons\\Weapons\\FireWeaponEvent.cs",
+              "ToolTip": "D:\\Udemy - Unity 2D Dungeon Gunner Roguelike Development Course 2024-9\\33 - Finished Game\\DungeonGunnerCourse\\Assets\\Scripts\\Weapons\\Weapons\\FireWeaponEvent.cs",
+              "RelativeToolTip": "..\\..\\Udemy - Unity 2D Dungeon Gunner Roguelike Development Course 2024-9\\33 - Finished Game\\DungeonGunnerCourse\\Assets\\Scripts\\Weapons\\Weapons\\FireWeaponEvent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T00:18:07.88Z",
+              "WhenOpened": "2025-01-10T00:46:27.37Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "EnemyWeaponAI.cs",
+              "DocumentMoniker": "D:\\Udemy - Unity 2D Dungeon Gunner Roguelike Development Course 2024-9\\33 - Finished Game\\DungeonGunnerCourse\\Assets\\Scripts\\Enemies\\EnemyWeaponAI.cs",
+              "RelativeDocumentMoniker": "..\\..\\Udemy - Unity 2D Dungeon Gunner Roguelike Development Course 2024-9\\33 - Finished Game\\DungeonGunnerCourse\\Assets\\Scripts\\Enemies\\EnemyWeaponAI.cs",
+              "ToolTip": "D:\\Udemy - Unity 2D Dungeon Gunner Roguelike Development Course 2024-9\\33 - Finished Game\\DungeonGunnerCourse\\Assets\\Scripts\\Enemies\\EnemyWeaponAI.cs",
+              "RelativeToolTip": "..\\..\\Udemy - Unity 2D Dungeon Gunner Roguelike Development Course 2024-9\\33 - Finished Game\\DungeonGunnerCourse\\Assets\\Scripts\\Enemies\\EnemyWeaponAI.cs",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAiwH0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T00:41:55.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EnemyWeaponAI.cs",
+              "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Enemy\\EnemyWeaponAI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyWeaponAI.cs",
+              "ToolTip": "D:\\blmproje\\Proje\\Assets\\Scripts\\Enemy\\EnemyWeaponAI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemyWeaponAI.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAADgv3gAAACFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T00:41:42.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "ReloadWeapon.cs",
               "DocumentMoniker": "D:\\Udemy - Unity 2D Dungeon Gunner Roguelike Development Course 2024-9\\33 - Finished Game\\DungeonGunnerCourse\\Assets\\Scripts\\Weapons\\Weapons\\ReloadWeapon.cs",
               "RelativeDocumentMoniker": "..\\..\\Udemy - Unity 2D Dungeon Gunner Roguelike Development Course 2024-9\\33 - Finished Game\\DungeonGunnerCourse\\Assets\\Scripts\\Weapons\\Weapons\\ReloadWeapon.cs",
@@ -278,7 +314,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
+              "Title": "Player.cs",
+              "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Player\\Player.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Player.cs",
+              "ToolTip": "D:\\blmproje\\Proje\\Assets\\Scripts\\Player\\Player.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\Player.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAABRwCQAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T14:23:37.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PlayerControl.cs",
+              "DocumentMoniker": "D:\\Udemy - Unity 2D Dungeon Gunner Roguelike Development Course 2024-9\\33 - Finished Game\\DungeonGunnerCourse\\Assets\\Scripts\\Player\\PlayerControl.cs",
+              "RelativeDocumentMoniker": "..\\..\\Udemy - Unity 2D Dungeon Gunner Roguelike Development Course 2024-9\\33 - Finished Game\\DungeonGunnerCourse\\Assets\\Scripts\\Player\\PlayerControl.cs",
+              "ToolTip": "D:\\Udemy - Unity 2D Dungeon Gunner Roguelike Development Course 2024-9\\33 - Finished Game\\DungeonGunnerCourse\\Assets\\Scripts\\Player\\PlayerControl.cs",
+              "RelativeToolTip": "..\\..\\Udemy - Unity 2D Dungeon Gunner Roguelike Development Course 2024-9\\33 - Finished Game\\DungeonGunnerCourse\\Assets\\Scripts\\Player\\PlayerControl.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAABRwDoAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T00:11:54.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Enemy.cs",
+              "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Enemy\\Enemy.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\Enemy.cs",
+              "ToolTip": "D:\\blmproje\\Proje\\Assets\\Scripts\\Enemy\\Enemy.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\Enemy.cs",
+              "ViewState": "AgIAAJEAAAAAAAAAAAAwwJsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T16:07:19.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AnimateEnemy.cs",
+              "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Enemy\\AnimateEnemy.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\AnimateEnemy.cs",
+              "ToolTip": "D:\\blmproje\\Proje\\Assets\\Scripts\\Enemy\\AnimateEnemy.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\AnimateEnemy.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAA1wDwAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T16:42:52.497Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "ReloadWeaponEvent.cs",
               "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Weapons\\WeaponScripts\\ReloadWeaponEvent.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Weapons\\WeaponScripts\\ReloadWeaponEvent.cs",
@@ -291,65 +379,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Player.cs",
-              "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Player\\Player.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Player.cs",
-              "ToolTip": "D:\\blmproje\\Proje\\Assets\\Scripts\\Player\\Player.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\Player.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAEwCQAAAAwAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "FireWeaponEvent.cs",
+              "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Weapons\\WeaponScripts\\FireWeaponEvent.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Weapons\\WeaponScripts\\FireWeaponEvent.cs",
+              "ToolTip": "D:\\blmproje\\Proje\\Assets\\Scripts\\Weapons\\WeaponScripts\\FireWeaponEvent.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Weapons\\WeaponScripts\\FireWeaponEvent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T14:23:37.97Z",
+              "WhenOpened": "2025-01-09T14:27:03.679Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "PlayerControl.cs",
-              "DocumentMoniker": "D:\\Udemy - Unity 2D Dungeon Gunner Roguelike Development Course 2024-9\\33 - Finished Game\\DungeonGunnerCourse\\Assets\\Scripts\\Player\\PlayerControl.cs",
-              "RelativeDocumentMoniker": "..\\..\\Udemy - Unity 2D Dungeon Gunner Roguelike Development Course 2024-9\\33 - Finished Game\\DungeonGunnerCourse\\Assets\\Scripts\\Player\\PlayerControl.cs",
-              "ToolTip": "D:\\Udemy - Unity 2D Dungeon Gunner Roguelike Development Course 2024-9\\33 - Finished Game\\DungeonGunnerCourse\\Assets\\Scripts\\Player\\PlayerControl.cs",
-              "RelativeToolTip": "..\\..\\Udemy - Unity 2D Dungeon Gunner Roguelike Development Course 2024-9\\33 - Finished Game\\DungeonGunnerCourse\\Assets\\Scripts\\Player\\PlayerControl.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAASwDoAAAAhAAAAAAAAAA==",
+              "DocumentIndex": 11,
+              "Title": "ReloadWeapon.cs",
+              "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Weapons\\WeaponScripts\\ReloadWeapon.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Weapons\\WeaponScripts\\ReloadWeapon.cs",
+              "ToolTip": "D:\\blmproje\\Proje\\Assets\\Scripts\\Weapons\\WeaponScripts\\ReloadWeapon.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Weapons\\WeaponScripts\\ReloadWeapon.cs",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAswIQAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T00:11:54.2Z",
+              "WhenOpened": "2025-01-10T00:18:07.88Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Enemy.cs",
-              "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Enemy\\Enemy.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\Enemy.cs",
-              "ToolTip": "D:\\blmproje\\Proje\\Assets\\Scripts\\Enemy\\Enemy.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Enemy\\Enemy.cs",
-              "ViewState": "AgIAALsAAAAAAAAAAAAiwM8AAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T16:07:19.785Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "EnemyDetails.cs",
               "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Enemy\\EnemyDetails.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyDetails.cs",
               "ToolTip": "D:\\blmproje\\Proje\\Assets\\Scripts\\Enemy\\EnemyDetails.cs",
               "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemyDetails.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAASwEoAAABTAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAABRwBIAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-09T16:04:20.285Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 9,
               "Title": "PlayerControl.cs",
               "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Player\\PlayerControl.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerControl.cs",
               "ToolTip": "D:\\blmproje\\Proje\\Assets\\Scripts\\Player\\PlayerControl.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerControl.cs",
-              "ViewState": "AgIAAGQAAAAAAAAAAAAEwHAAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAG0AAAAAAAAAAABRwHAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-09T13:18:32.127Z",
               "EditorCaption": ""
@@ -357,6 +432,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "FireWeapon.cs",
+              "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Weapons\\WeaponScripts\\FireWeapon.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Weapons\\WeaponScripts\\FireWeapon.cs",
+              "ToolTip": "D:\\blmproje\\Proje\\Assets\\Scripts\\Weapons\\WeaponScripts\\FireWeapon.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Weapons\\WeaponScripts\\FireWeapon.cs",
+              "ViewState": "AgIAAIEAAAAAAAAAAAASwI4AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T14:27:56.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "WeaponReloadedEvent.cs",
               "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Weapons\\WeaponScripts\\WeaponReloadedEvent.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Weapons\\WeaponScripts\\WeaponReloadedEvent.cs",
@@ -369,7 +457,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 19,
               "Title": "StaticEvent.cs",
               "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\StaticEvents\\StaticEvent.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\StaticEvents\\StaticEvent.cs",
@@ -382,7 +470,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 15,
               "Title": "WeaponReloadedEvent.cs",
               "DocumentMoniker": "D:\\Udemy - Unity 2D Dungeon Gunner Roguelike Development Course 2024-9\\33 - Finished Game\\DungeonGunnerCourse\\Assets\\Scripts\\Weapons\\Weapons\\WeaponReloadedEvent.cs",
               "RelativeDocumentMoniker": "..\\..\\Udemy - Unity 2D Dungeon Gunner Roguelike Development Course 2024-9\\33 - Finished Game\\DungeonGunnerCourse\\Assets\\Scripts\\Weapons\\Weapons\\WeaponReloadedEvent.cs",
@@ -395,20 +483,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "FireWeapon.cs",
-              "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Weapons\\WeaponScripts\\FireWeapon.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Weapons\\WeaponScripts\\FireWeapon.cs",
-              "ToolTip": "D:\\blmproje\\Proje\\Assets\\Scripts\\Weapons\\WeaponScripts\\FireWeapon.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Weapons\\WeaponScripts\\FireWeapon.cs",
-              "ViewState": "AgIAAGEAAAAAAAAAAADwv3IAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T14:27:56.41Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 18,
               "Title": "RoomNodeGraphEditor.cs",
               "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\NodeGraph\\Editor\\RoomNodeGraphEditor.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\NodeGraph\\Editor\\RoomNodeGraphEditor.cs",
@@ -421,7 +496,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
               "Title": "NodeGraphObject.cs",
               "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\NodeGraph\\NodeGraphObject.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\NodeGraph\\NodeGraphObject.cs",
@@ -434,33 +509,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 17,
               "Title": "NodeScriptableObject.cs",
               "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\NodeGraph\\NodeScriptableObject.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\NodeGraph\\NodeScriptableObject.cs",
               "ToolTip": "D:\\blmproje\\Proje\\Assets\\Scripts\\NodeGraph\\NodeScriptableObject.cs",
               "RelativeToolTip": "Assets\\Scripts\\NodeGraph\\NodeScriptableObject.cs",
-              "ViewState": "AgIAAAsBAAAAAAAAAAA8wBQBAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAwBAAAAAAAAAAAmwBQBAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-09T23:39:22.242Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 25,
               "Title": "Destroyed.cs",
               "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Health\\Destroyed.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Health\\Destroyed.cs",
               "ToolTip": "D:\\blmproje\\Proje\\Assets\\Scripts\\Health\\Destroyed.cs",
               "RelativeToolTip": "Assets\\Scripts\\Health\\Destroyed.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAIBJwCYAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBZwCYAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-09T22:22:30.175Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 23,
               "Title": "Health.cs",
               "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Health\\Health.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Health\\Health.cs",
@@ -473,7 +548,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 30,
               "Title": "WeaponFiredEvent.cs",
               "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Weapons\\WeaponScripts\\WeaponFiredEvent.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Weapons\\WeaponScripts\\WeaponFiredEvent.cs",
@@ -486,7 +561,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 22,
               "Title": "InstantiatedRoom.cs",
               "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Dungeon\\InstantiatedRoom.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Dungeon\\InstantiatedRoom.cs",
@@ -499,20 +574,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 36,
               "Title": "EnemyMovement.cs",
               "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Enemy\\EnemyMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyMovement.cs",
               "ToolTip": "D:\\blmproje\\Proje\\Assets\\Scripts\\Enemy\\EnemyMovement.cs",
               "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemyMovement.cs",
-              "ViewState": "AgIAAJ8AAAAAAAAAAAAAwJ8AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAJwAAAAAAAAAAMBUwJ8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-09T16:04:54.594Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 48,
               "Title": "AnimPlayer.cs",
               "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Player\\AnimPlayer.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\AnimPlayer.cs",
@@ -525,7 +600,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 46,
               "Title": "RoomTemplateSO.cs",
               "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Dungeon\\RoomTemplateSO.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Dungeon\\RoomTemplateSO.cs",
@@ -538,7 +613,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 31,
               "Title": "WeaponDetails.cs",
               "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Weapons\\WeaponScripts\\WeaponDetails.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Weapons\\WeaponScripts\\WeaponDetails.cs",
@@ -551,7 +626,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 20,
               "Title": "EnemySpawner.cs",
               "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Enemy\\EnemySpawner.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemySpawner.cs",
@@ -564,7 +639,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 24,
               "Title": "DestroyedEvent.cs",
               "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Health\\DestroyedEvent.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Health\\DestroyedEvent.cs",
@@ -577,7 +652,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 21,
               "Title": "Enums.cs",
               "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Enums\\Enums.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enums\\Enums.cs",
@@ -590,7 +665,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 29,
               "Title": "EnemyHealthDetails.cs",
               "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Enemy\\EnemyHealthDetails.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyHealthDetails.cs",
@@ -603,7 +678,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 27,
               "Title": "HealthEvent.cs",
               "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Health\\HealthEvent.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Health\\HealthEvent.cs",
@@ -616,7 +691,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 26,
               "Title": "Ammo.cs",
               "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Weapons\\AmmoScripts\\Ammo.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Weapons\\AmmoScripts\\Ammo.cs",
@@ -629,7 +704,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 32,
               "Title": "AmmoDetails.cs",
               "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Weapons\\AmmoScripts\\AmmoDetails.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Weapons\\AmmoScripts\\AmmoDetails.cs",
@@ -642,7 +717,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 34,
               "Title": "IFireable.cs",
               "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Weapons\\AmmoScripts\\IFireable.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Weapons\\AmmoScripts\\IFireable.cs",
@@ -655,7 +730,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 28,
               "Title": "Settings.cs",
               "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Misc\\Settings.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Misc\\Settings.cs",
@@ -668,7 +743,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 33,
               "Title": "HelperUtilities.cs",
               "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Utilities\\HelperUtilities.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Utilities\\HelperUtilities.cs",
@@ -681,20 +756,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "FireWeaponEvent.cs",
-              "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Weapons\\WeaponScripts\\FireWeaponEvent.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Weapons\\WeaponScripts\\FireWeaponEvent.cs",
-              "ToolTip": "D:\\blmproje\\Proje\\Assets\\Scripts\\Weapons\\WeaponScripts\\FireWeaponEvent.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Weapons\\WeaponScripts\\FireWeaponEvent.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABLAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T14:27:03.679Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 38,
               "Title": "Room.cs",
               "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Dungeon\\Room.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Dungeon\\Room.cs",
@@ -707,7 +769,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 39,
               "Title": "GameManager.cs",
               "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\GameManager\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager\\GameManager.cs",
@@ -720,7 +782,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 44,
               "Title": "SpawnTest.cs",
               "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Enemy\\SpawnTest.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\SpawnTest.cs",
@@ -733,7 +795,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 45,
               "Title": "RoomEnemySpawnParameters.cs",
               "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Dungeon\\RoomEnemySpawnParameters.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Dungeon\\RoomEnemySpawnParameters.cs",
@@ -746,7 +808,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 40,
               "Title": "DungeonBuilder.cs",
               "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Dungeon\\DungeonBuilder.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Dungeon\\DungeonBuilder.cs",
@@ -759,7 +821,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 43,
               "Title": "CurrentPlayer.cs",
               "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Player\\CurrentPlayer.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\CurrentPlayer.cs",
@@ -772,7 +834,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 37,
               "Title": "DoorScript.cs",
               "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Dungeon\\DoorScript.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Dungeon\\DoorScript.cs",
@@ -785,7 +847,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 42,
               "Title": "Doorway.cs",
               "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Dungeon\\Doorway.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Dungeon\\Doorway.cs",
@@ -798,7 +860,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 41,
               "Title": "RandomSpawnableObject.cs",
               "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Utilities\\RandomSpawnableObject.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Utilities\\RandomSpawnableObject.cs",
@@ -811,7 +873,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 35,
               "Title": "MaterializeEffect.cs",
               "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Effects\\MaterializeEffect.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Effects\\MaterializeEffect.cs",
@@ -824,7 +886,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 47,
               "Title": "DoorLighting.cs",
               "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Dungeon\\DoorLighting.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Dungeon\\DoorLighting.cs",
@@ -837,20 +899,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "AnimateEnemy.cs",
-              "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Enemy\\AnimateEnemy.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\AnimateEnemy.cs",
-              "ToolTip": "D:\\blmproje\\Proje\\Assets\\Scripts\\Enemy\\AnimateEnemy.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Enemy\\AnimateEnemy.cs",
-              "ViewState": "AgIAAG8AAAAAAAAAAAAIwCwAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T16:42:52.497Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 51,
               "Title": "MovementDetails.cs",
               "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Movements\\MovementDetails.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Movements\\MovementDetails.cs",
@@ -863,7 +912,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 50,
               "Title": "SpawnableObjectRatio.cs",
               "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Utilities\\SpawnableObjectRatio.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Utilities\\SpawnableObjectRatio.cs",
@@ -876,7 +925,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 49,
               "Title": "SpawnableObjectsByLevel.cs",
               "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Utilities\\SpawnableObjectsByLevel.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Utilities\\SpawnableObjectsByLevel.cs",
@@ -889,7 +938,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 54,
               "Title": "SetActiveWeaponEvent.cs",
               "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Weapons\\WeaponScripts\\SetActiveWeaponEvent.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Weapons\\WeaponScripts\\SetActiveWeaponEvent.cs",
@@ -902,7 +951,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 52,
               "Title": "Weapon.cs",
               "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Weapons\\WeaponScripts\\Weapon.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Weapons\\WeaponScripts\\Weapon.cs",
@@ -915,7 +964,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 56,
               "Title": "PlayerDetails.cs",
               "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Player\\PlayerDetails.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerDetails.cs",
@@ -928,7 +977,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 53,
               "Title": "Ammo.cs",
               "DocumentMoniker": "D:\\Udemy - Unity 2D Dungeon Gunner Roguelike Development Course 2024-9\\33 - Finished Game\\DungeonGunnerCourse\\Assets\\Scripts\\Weapons\\Ammo\\Ammo.cs",
               "RelativeDocumentMoniker": "..\\..\\Udemy - Unity 2D Dungeon Gunner Roguelike Development Course 2024-9\\33 - Finished Game\\DungeonGunnerCourse\\Assets\\Scripts\\Weapons\\Ammo\\Ammo.cs",
@@ -941,7 +990,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 55,
               "Title": "SetActiveWeaponEvent.cs",
               "DocumentMoniker": "D:\\Udemy - Unity 2D Dungeon Gunner Roguelike Development Course 2024-9\\33 - Finished Game\\DungeonGunnerCourse\\Assets\\Scripts\\Weapons\\Weapons\\SetActiveWeaponEvent.cs",
               "RelativeDocumentMoniker": "..\\..\\Udemy - Unity 2D Dungeon Gunner Roguelike Development Course 2024-9\\33 - Finished Game\\DungeonGunnerCourse\\Assets\\Scripts\\Weapons\\Weapons\\SetActiveWeaponEvent.cs",
@@ -954,7 +1003,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 59,
               "Title": "AStar.cs",
               "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Astar\\AStar.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Astar\\AStar.cs",
@@ -967,7 +1016,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 60,
               "Title": "AStarNode.cs",
               "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Astar\\AStarNode.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Astar\\AStarNode.cs",
@@ -980,7 +1029,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 58,
               "Title": "PoolManager.cs",
               "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\PoolManager\\PoolManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PoolManager\\PoolManager.cs",
@@ -993,7 +1042,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 57,
               "Title": "WeaponDetailsSO.cs",
               "DocumentMoniker": "D:\\Udemy - Unity 2D Dungeon Gunner Roguelike Development Course 2024-9\\33 - Finished Game\\DungeonGunnerCourse\\Assets\\Scripts\\Weapons\\Weapons\\WeaponDetailsSO.cs",
               "RelativeDocumentMoniker": "..\\..\\Udemy - Unity 2D Dungeon Gunner Roguelike Development Course 2024-9\\33 - Finished Game\\DungeonGunnerCourse\\Assets\\Scripts\\Weapons\\Weapons\\WeaponDetailsSO.cs",
@@ -1006,7 +1055,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 61,
               "Title": "AStarTest.cs",
               "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Astar\\AStarTest.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Astar\\AStarTest.cs",
@@ -1019,7 +1068,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 63,
               "Title": "GameResources.cs",
               "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\GameManager\\GameResources.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager\\GameResources.cs",
@@ -1032,7 +1081,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 62,
               "Title": "AStarGridNodes.cs",
               "DocumentMoniker": "D:\\blmproje\\Proje\\Assets\\Scripts\\Astar\\AStarGridNodes.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Astar\\AStarGridNodes.cs",

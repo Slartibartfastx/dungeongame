@@ -49,7 +49,7 @@ public class EnemyDetails : ScriptableObject
     [Tooltip("The colour to use when the enemy materializes.  This is an HDR color so intensity can be set to cause glowing / bloom")]
     #endregion
     public Color enemyMaterializeColor;
-    /*
+    
     #region Header ENEMY WEAPON SETTINGS
     [Space(10)]
     [Header("ENEMY WEAPON SETTINGS")]
@@ -57,8 +57,8 @@ public class EnemyDetails : ScriptableObject
     #region Tooltip
     [Tooltip("The weapon for the enemy - none if the enemy doesn't have a weapon")]
     #endregion
-    public WeaponDetailsSO enemyWeapon;
-    */
+    public WeaponDetails enemyWeapon;
+    
     #region Tooltip
     [Tooltip("The minimum time delay interval in seconds between bursts of enemy shooting.  This value should be greater than 0. A random value will be selected between the minimum value and the maximum value")]
     #endregion

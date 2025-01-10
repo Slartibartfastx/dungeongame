@@ -140,7 +140,7 @@ public class FireWeapon : MonoBehaviour
 
             // Initialise Ammo
             ammo.InitialiseAmmo(currentAmmo, aimAngle, weaponAimAngle, ammoSpeed, weaponAimDirectionVector);
-            Debug.Log("fired");
+            
             // Reduce ammo clip count if not infinite clip capacity
             if (!activeWeapon.GetCurrentWeapon().wepDetails.infiniteClip)
             {

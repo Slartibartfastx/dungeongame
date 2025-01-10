@@ -41,9 +41,9 @@ public class Enemy : MonoBehaviour
     private HealthEvent healthEvent;
     private Health health;
     [HideInInspector] public AimWeaponEvent aimWeaponEvent;
-    //[HideInInspector] public FireWeaponEvent fireWeaponEvent;
-    //private FireWeapon fireWeapon;
-    //private SetActiveWeaponEvent setActiveWeaponEvent;
+    [HideInInspector] public FireWeaponEvent fireWeaponEvent;
+    private FireWeapon fireWeapon;
+   private SetActiveWeaponEvent setActiveWeaponEvent;
    private EnemyMovement enemyMovementAI;
     [HideInInspector] public MovementToPositionEvent movementToPositionEvent;
     [HideInInspector] public IdleEvent idleEvent;
@@ -59,9 +59,9 @@ public class Enemy : MonoBehaviour
         healthEvent = GetComponent<HealthEvent>();
         health = GetComponent<Health>();
         aimWeaponEvent = GetComponent<AimWeaponEvent>();
-        //fireWeaponEvent = GetComponent<FireWeaponEvent>();
-        //fireWeapon = GetComponent<FireWeapon>();
-        //setActiveWeaponEvent = GetComponent<SetActiveWeaponEvent>();
+        fireWeaponEvent = GetComponent<FireWeaponEvent>();
+        fireWeapon = GetComponent<FireWeapon>();
+        setActiveWeaponEvent = GetComponent<SetActiveWeaponEvent>();
         enemyMovementAI = GetComponent<EnemyMovement>();
         movementToPositionEvent = GetComponent<MovementToPositionEvent>();
         idleEvent = GetComponent<IdleEvent>();
@@ -124,7 +124,7 @@ public class Enemy : MonoBehaviour
 
        SetEnemyStartingHealth(dungeonLevel);
 
-       // SetEnemyStartingWeapon();
+        SetEnemyStartingWeapon();
 
         SetEnemyAnimationSpeed();
 
@@ -153,7 +153,7 @@ public class Enemy : MonoBehaviour
         enemyMovementAI.enabled = isEnabled;
 
         // Enable / Disable Fire Weapon
-        //fireWeapon.enabled = isEnabled;
+        fireWeapon.enabled = isEnabled;
 
     }
 
@@ -189,7 +189,7 @@ public class Enemy : MonoBehaviour
         health.setStartingHP(Settings.defaultEnemyHealth);
     }
 
-    /*
+    
     /// <summary>
     /// Set enemy movement update frame
     /// </summary>
@@ -205,7 +205,7 @@ public class Enemy : MonoBehaviour
         // Process if enemy has a weapon
         if (enemyDetails.enemyWeapon != null)
         {
-            Weapon weapon = new Weapon() { wepDetails = enemyDetails.enemyWeapon, weaponReloadTimer = 0f, weaponClipRemainingAmmo = enemyDetails.enemyWeapon.weaponClipAmmoCapacity, weaponRemainingAmmo = enemyDetails.enemyWeapon.weaponAmmoCapacity, isWeaponReloading = false };
+            Weapon weapon = new Weapon() { wepDetails = enemyDetails.enemyWeapon, wepReloadTimer = 0f, wepClipRemainingAmmo = enemyDetails.enemyWeapon.clipCapacity, wepRemainingAmmo = enemyDetails.enemyWeapon.maxAmmo, isReloading = false };
 
             //Set weapon for enemy
             setActiveWeaponEvent.CallSetActiveWeaponEvent(weapon);
@@ -215,5 +215,5 @@ public class Enemy : MonoBehaviour
 
 
   
-    */
+    
 }
