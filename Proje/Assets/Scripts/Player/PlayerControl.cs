@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -61,24 +62,6 @@ public class PlayerControl : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// Weapon Input
-    /// </summary>
-    private void WeaponInput()
-    {
-        Vector3 weaponDirection;
-        float weaponAngleDegrees, playerAngleDegrees;
-        AimDir playerAimDirection;
-
-        // Aim weapon input
-        AimWeaponInput(out weaponDirection, out weaponAngleDegrees, out playerAngleDegrees, out playerAimDirection);
-
-        // Fire weapon input
-        FireWeaponInput(weaponDirection, weaponAngleDegrees, playerAngleDegrees, playerAimDirection);
-
-        // Reload weapon input
-        //ReloadWeaponInput();
-    }
 
     private void AimWeaponInput(out Vector3 weaponDirection, out float weaponAngleDegrees, out float playerAngleDegrees, out AimDir playerAimDirection)
     {
@@ -163,7 +146,41 @@ public class PlayerControl : MonoBehaviour
 
         ReloadWeaponInput();
 
+        SwitchWeaponInput();
+
     }
+    private void SwitchWeaponInput()
+    {
+        /*if (Input.mouseScrollDelta.y < 0f)
+        {
+
+            PreviousWeapon();
+        }
+        if (Input.mouseScrollDelta.y > 0f)
+        {
+
+            NextWeapon();
+        }*/
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+
+            SetWepByIndex(1);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+
+            SetWepByIndex(2);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+
+            SetWepByIndex(3);
+        }
+
+    }
+
 
     private void AimWepInput(out Vector3 wepDir, out float wepAngDeg, out float playerAngDeg, out AimDir playerAimDir)
     {

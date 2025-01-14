@@ -23,7 +23,7 @@ MonoBehaviour:
   damage: 6
   speedMin: 15
   speedMax: 15
-  range: 112
+  range: 11
   rotationSpeed: 1
   spreadMin: 2
   spreadMax: 4
