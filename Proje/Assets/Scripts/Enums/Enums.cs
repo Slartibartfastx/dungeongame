@@ -22,6 +22,27 @@ public enum GameState
     ResettingGame             // restartGame
 }
 
+public enum ChestSpawnEvent
+{
+    onRoomEntry,
+    onEnemiesDefeated
+}
+
+public enum ChestSpawnPosition
+{
+    atSpawnerPosition,
+    atPlayerPosition
+}
+
+public enum ChestState
+{
+    closed,
+    healthItem,
+    ammoItem,
+    weaponItem,
+    empty
+}
+
 public enum AimDir
 {
     Up,

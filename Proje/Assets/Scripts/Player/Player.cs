@@ -137,4 +137,18 @@ public class Player : MonoBehaviour
 
         return weapon;
     }
+
+    /// <summary>
+    /// Returns true if the weapon is held by the player - otherwise returns false
+    /// </summary>
+    public bool IsWeaponHeldByPlayer(WeaponDetails weaponDetails)
+    {
+
+        foreach (Weapon weapon in wepList)
+        {
+            if (weapon.wepDetails == weaponDetails) return true;
+        }
+
+        return false;
+    }
 }

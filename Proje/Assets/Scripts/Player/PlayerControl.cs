@@ -24,6 +24,8 @@ public class PlayerControl : MonoBehaviour
     private void Update()
     {
         MovInput();
+        // Process player use item input
+        UseItemInput();
         WepInput();
     }
 
@@ -217,6 +219,41 @@ public class PlayerControl : MonoBehaviour
             player.reloadWeaponEvent.CallReloadWeaponEvent(player.activeWep.GetCurrentWeapon(), 0);
         }
 
+    }
+
+    /// <summary>
+    /// Use the nearest item within 2 unity units from the player
+    /// </summary>
+    private void UseItemInput()
+    {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            float useItemRadius = 2f;
+
+            // Get any 'Useable' item near the player
+            Collider2D[] collider2DArray = Physics2D.OverlapCircleAll(player.GetPlayerPosition(), useItemRadius);
+
+            bool useableFound = false; // Flag to check if any useable item is found
+
+            // Loop through detected items to see if any are 'useable'
+            foreach (Collider2D collider2D in collider2DArray)
+            {
+                IUseable iUseable = collider2D.GetComponent<IUseable>();
+
+                if (iUseable != null)
+                {
+                    Debug.Log($"Useable item found: {collider2D.gameObject.name}");
+                    iUseable.UseItem();
+                    useableFound = true; // Mark that we found a useable item
+                    break; // Optional: Stop after using the first detected item
+                }
+            }
+
+            if (!useableFound)
+            {
+                Debug.Log("No useable items near the player.");
+            }
+        }
     }
 
     #region VALIDATION

@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\NodeGraph\NodeTypeListScriptableObject.cs" />
     <Compile Include="Assets\Scripts\GameManager\GameManager.cs" />
     <Compile Include="Assets\Scripts\Weapons\WeaponScripts\WeaponReloadedEvent.cs" />
+    <Compile Include="Assets\Scripts\Chest\ChestSpawner.cs" />
     <Compile Include="Assets\Scripts\Weapons\WeaponScripts\ActiveWeapon.cs" />
     <Compile Include="Assets\Scripts\Weapons\WeaponScripts\FireWeapon.cs" />
     <Compile Include="Assets\Scripts\Weapons\WeaponScripts\FireWeaponEvent.cs" />
@@ -74,14 +75,17 @@
     <Compile Include="Assets\Scripts\Dungeon\RoomEnemySpawnParameters.cs" />
     <Compile Include="Assets\Scripts\UI\HP.cs" />
     <Compile Include="Assets\Scripts\Health\HealthEvent.cs" />
+    <Compile Include="Assets\Scripts\Chest\Chest.cs" />
     <Compile Include="Assets\Scripts\Dungeon\DungeonBuilder.cs" />
     <Compile Include="Assets\Scripts\Effects\MaterializeEffect.cs" />
+    <Compile Include="Assets\Scripts\Environment\MoveItem.cs" />
     <Compile Include="Assets\Scripts\Enums\Enums.cs" />
     <Compile Include="Assets\Scripts\Weapons\WeaponScripts\ReloadWeaponEvent.cs" />
     <Compile Include="Assets\Scripts\Dungeon\DoorLighting.cs" />
     <Compile Include="Assets\Scripts\Enemy\Enemy.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerDetails.cs" />
     <Compile Include="Assets\Scripts\NodeGraph\NodeScriptableObject.cs" />
+    <Compile Include="Assets\Scripts\Chest\ChestItem.cs" />
     <Compile Include="Assets\Scripts\Misc\Singleton.cs" />
     <Compile Include="Assets\Scripts\Enemy\SpawnTest.cs" />
     <Compile Include="Assets\Scripts\Astar\AStar.cs" />
@@ -122,6 +126,7 @@
     <Compile Include="Assets\Scripts\GameManager\GameResources.cs" />
     <Compile Include="Assets\Scripts\Utilities\SpawnableObjectRatio.cs" />
     <Compile Include="Assets\Scripts\Movements\MovementByVelocityEvent.cs" />
+    <Compile Include="Assets\ScriptableObjectAssets\IUseable.cs" />
     <Compile Include="Assets\Scripts\Misc\Settings.cs" />
     <Compile Include="Assets\Scripts\StaticEvents\StaticEvent.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerControl.cs" />
