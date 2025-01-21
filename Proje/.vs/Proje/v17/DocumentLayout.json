@@ -3,84 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|c:\\users\\sefa\\documents\\github\\blmproje\\blmproje\\proje\\assets\\scripts\\chest\\chestspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\chest\\chestspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|c:\\users\\sefa\\documents\\github\\blmproje\\blmproje\\proje\\assets\\scripts\\dungeon\\roomlighting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dungeon\\roomlighting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\assets\\scripts\\utilities\\helperutilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\utilities\\helperutilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|c:\\users\\sefa\\documents\\github\\blmproje\\blmproje\\proje\\assets\\scripts\\player\\playercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\assets\\scripts\\player\\animplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\animplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\assets\\scripts\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\assets\\scripts\\chest\\chest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\chest\\chest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\assets\\scripts\\enemy\\enemymovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemymovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\assets\\scripts\\dungeon\\instantiatedroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dungeon\\instantiatedroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\assets\\scripts\\astar\\astar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\astar\\astar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\assets\\scripts\\environment\\moveitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\environment\\moveitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\assets\\scripts\\chest\\chestitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\chest\\chestitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\assets\\scripts\\weapons\\weaponscripts\\weapondetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\weapons\\weaponscripts\\weapondetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\assets\\scripts\\health\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\health\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\assets\\scripts\\enums\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enums\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\assets\\scripts\\misc\\settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\misc\\settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\assets\\scripts\\gamemanager\\gameresources.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager\\gameresources.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\assets\\scripts\\weapons\\weaponscripts\\fireweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\weapons\\weaponscripts\\fireweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\assets\\scripts\\weapons\\weaponscripts\\weaponreloadedevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\weapons\\weaponscripts\\weaponreloadedevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\assets\\scripts\\weapons\\weaponscripts\\reloadweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\weapons\\weaponscripts\\reloadweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\assets\\scripts\\weapons\\weaponscripts\\reloadweaponevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\weapons\\weaponscripts\\reloadweaponevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|c:\\users\\sefa\\documents\\github\\blmproje\\blmproje\\proje\\assets\\scripts\\dungeon\\doorlighting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC119A0C-E532-0513-BD7A-3DBECEDDD358}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dungeon\\doorlighting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -95,245 +23,28 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ChestSpawner.cs",
-              "DocumentMoniker": "C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\Assets\\Scripts\\Chest\\ChestSpawner.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Chest\\ChestSpawner.cs",
-              "ToolTip": "C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\Assets\\Scripts\\Chest\\ChestSpawner.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Chest\\ChestSpawner.cs",
-              "ViewState": "AgIAAAIBAAAAAAAAAAAIwC0BAAAAAAAAAAAAAA==",
+              "Title": "RoomLighting.cs",
+              "DocumentMoniker": "C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\Assets\\Scripts\\Dungeon\\RoomLighting.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Dungeon\\RoomLighting.cs",
+              "ToolTip": "C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\Assets\\Scripts\\Dungeon\\RoomLighting.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Dungeon\\RoomLighting.cs",
+              "ViewState": "AgIAAG8AAAAAAAAAAAASwI8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T00:37:33.981Z",
+              "WhenOpened": "2025-01-21T17:43:24.164Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AnimPlayer.cs",
-              "DocumentMoniker": "C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\Assets\\Scripts\\Player\\AnimPlayer.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\AnimPlayer.cs",
-              "ToolTip": "C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\Assets\\Scripts\\Player\\AnimPlayer.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\AnimPlayer.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T00:30:51.351Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "EnemyMovement.cs",
-              "DocumentMoniker": "C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\Assets\\Scripts\\Enemy\\EnemyMovement.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyMovement.cs",
-              "ToolTip": "C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\Assets\\Scripts\\Enemy\\EnemyMovement.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemyMovement.cs",
-              "ViewState": "AgIAANIAAAAAAAAAAADwvwQBAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T00:21:50.611Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AStar.cs",
-              "DocumentMoniker": "C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\Assets\\Scripts\\Astar\\AStar.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Astar\\AStar.cs",
-              "ToolTip": "C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\Assets\\Scripts\\Astar\\AStar.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Astar\\AStar.cs",
-              "ViewState": "AgIAAIsAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T00:20:59.855Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "InstantiatedRoom.cs",
-              "DocumentMoniker": "C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\Assets\\Scripts\\Dungeon\\InstantiatedRoom.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Dungeon\\InstantiatedRoom.cs",
-              "ToolTip": "C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\Assets\\Scripts\\Dungeon\\InstantiatedRoom.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Dungeon\\InstantiatedRoom.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAzwAcAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T00:17:25.933Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "MoveItem.cs",
-              "DocumentMoniker": "C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\Assets\\Scripts\\Environment\\MoveItem.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Environment\\MoveItem.cs",
-              "ToolTip": "C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\Assets\\Scripts\\Environment\\MoveItem.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Environment\\MoveItem.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAYwEgAAABfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T00:16:23.527Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Player.cs",
-              "DocumentMoniker": "C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\Assets\\Scripts\\Player\\Player.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Player.cs",
-              "ToolTip": "C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\Assets\\Scripts\\Player\\Player.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\Player.cs",
-              "ViewState": "AgIAAGoAAAAAAAAAAAAswEQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T23:30:58.99Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "WeaponDetails.cs",
-              "DocumentMoniker": "C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\Assets\\Scripts\\Weapons\\WeaponScripts\\WeaponDetails.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Weapons\\WeaponScripts\\WeaponDetails.cs",
-              "ToolTip": "C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\Assets\\Scripts\\Weapons\\WeaponScripts\\WeaponDetails.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Weapons\\WeaponScripts\\WeaponDetails.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T23:38:19.095Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Chest.cs",
-              "DocumentMoniker": "C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\Assets\\Scripts\\Chest\\Chest.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Chest\\Chest.cs",
-              "ToolTip": "C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\Assets\\Scripts\\Chest\\Chest.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Chest\\Chest.cs",
-              "ViewState": "AgIAAFYAAAAAAAAAAAAuwIwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T23:35:02.897Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ChestItem.cs",
-              "DocumentMoniker": "C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\Assets\\Scripts\\Chest\\ChestItem.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Chest\\ChestItem.cs",
-              "ToolTip": "C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\Assets\\Scripts\\Chest\\ChestItem.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Chest\\ChestItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T23:33:56.93Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Health.cs",
-              "DocumentMoniker": "C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\Assets\\Scripts\\Health\\Health.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Health\\Health.cs",
-              "ToolTip": "C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\Assets\\Scripts\\Health\\Health.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Health\\Health.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAIwHkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T23:32:07.417Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Settings.cs",
-              "DocumentMoniker": "C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\Assets\\Scripts\\Misc\\Settings.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Misc\\Settings.cs",
-              "ToolTip": "C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\Assets\\Scripts\\Misc\\Settings.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Misc\\Settings.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T23:28:44.174Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "GameResources.cs",
-              "DocumentMoniker": "C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\Assets\\Scripts\\GameManager\\GameResources.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager\\GameResources.cs",
-              "ToolTip": "C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\Assets\\Scripts\\GameManager\\GameResources.cs",
-              "RelativeToolTip": "Assets\\Scripts\\GameManager\\GameResources.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAQwH4AAABVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T23:23:25.307Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "HelperUtilities.cs",
-              "DocumentMoniker": "C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\Assets\\Scripts\\Utilities\\HelperUtilities.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Utilities\\HelperUtilities.cs",
-              "ToolTip": "C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\Assets\\Scripts\\Utilities\\HelperUtilities.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Utilities\\HelperUtilities.cs",
-              "ViewState": "AgIAAKoAAAAAAAAAAAAhwL4AAAAuAAAAAAAAAA==",
+              "Title": "DoorLighting.cs",
+              "DocumentMoniker": "C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\Assets\\Scripts\\Dungeon\\DoorLighting.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Dungeon\\DoorLighting.cs",
+              "ToolTip": "C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\Assets\\Scripts\\Dungeon\\DoorLighting.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Dungeon\\DoorLighting.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAzwBoAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T14:45:06.975Z",
+              "WhenOpened": "2025-01-21T17:42:22.791Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Enums.cs",
-              "DocumentMoniker": "C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\Assets\\Scripts\\Enums\\Enums.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Enums\\Enums.cs",
-              "ToolTip": "C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\Assets\\Scripts\\Enums\\Enums.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Enums\\Enums.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T14:37:36.526Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PlayerControl.cs",
-              "DocumentMoniker": "C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\Assets\\Scripts\\Player\\PlayerControl.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerControl.cs",
-              "ToolTip": "C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\Assets\\Scripts\\Player\\PlayerControl.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerControl.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T07:12:53.86Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "FireWeapon.cs",
-              "DocumentMoniker": "C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\Assets\\Scripts\\Weapons\\WeaponScripts\\FireWeapon.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Weapons\\WeaponScripts\\FireWeapon.cs",
-              "ToolTip": "C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\Assets\\Scripts\\Weapons\\WeaponScripts\\FireWeapon.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Weapons\\WeaponScripts\\FireWeapon.cs",
-              "ViewState": "AgIAAGcAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T06:58:21.289Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "WeaponReloadedEvent.cs",
-              "DocumentMoniker": "C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\Assets\\Scripts\\Weapons\\WeaponScripts\\WeaponReloadedEvent.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Weapons\\WeaponScripts\\WeaponReloadedEvent.cs",
-              "ToolTip": "C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\Assets\\Scripts\\Weapons\\WeaponScripts\\WeaponReloadedEvent.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Weapons\\WeaponScripts\\WeaponReloadedEvent.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T06:57:26.014Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "ReloadWeaponEvent.cs",
-              "DocumentMoniker": "C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\Assets\\Scripts\\Weapons\\WeaponScripts\\ReloadWeaponEvent.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Weapons\\WeaponScripts\\ReloadWeaponEvent.cs",
-              "ToolTip": "C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\Assets\\Scripts\\Weapons\\WeaponScripts\\ReloadWeaponEvent.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Weapons\\WeaponScripts\\ReloadWeaponEvent.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T06:57:16.683Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "ReloadWeapon.cs",
-              "DocumentMoniker": "C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\Assets\\Scripts\\Weapons\\WeaponScripts\\ReloadWeapon.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Weapons\\WeaponScripts\\ReloadWeapon.cs",
-              "ToolTip": "C:\\Users\\sefa\\Documents\\GitHub\\blmproje\\blmproje\\Proje\\Assets\\Scripts\\Weapons\\WeaponScripts\\ReloadWeapon.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Weapons\\WeaponScripts\\ReloadWeapon.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAgwBIAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T06:57:05.645Z"
             }
           ]
         }

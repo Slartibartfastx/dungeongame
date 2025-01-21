@@ -136,7 +136,7 @@ public class EnemyMovement : MonoBehaviour
         Vector3Int enemyGridPosition = grid.WorldToCell(transform.position);
 
         // Build a path for the enemy to move on
-        movementSteps = AStar.BuildPath(currentRoom, enemyGridPosition, playerGridPosition);
+        movementSteps = Pathfinding.GeneratePath(currentRoom, enemyGridPosition, playerGridPosition);
 
         // Take off first step on path - this is the grid square the enemy is already on
         if (movementSteps != null)

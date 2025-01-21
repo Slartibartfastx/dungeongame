@@ -22,16 +22,16 @@ public enum GameState
     ResettingGame             // restartGame
 }
 
-public enum ChestSpawnEvent
+public enum ChestSpawnCondition
 {
     onRoomEntry,
     onEnemiesDefeated
 }
 
-public enum ChestSpawnPosition
+public enum ChestSpawnLocation
 {
-    atSpawnerPosition,
-    atPlayerPosition
+    SpawnerPosition,
+    PlayerPosition
 }
 
 public enum ChestState
